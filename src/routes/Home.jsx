@@ -12,7 +12,7 @@ import BgMusic from "../components/BgMusic";
 export const Home = () => {
   return (
     <div className="container_bottom box">
-      <BgMusic src={"/audio/EdSheeran-Perfect.mp3"} volume={0.5} />
+      <BgMusic src={"/audio/Camilo-LaBoda.mp3"} volume={0.5} />
       <div className="container_home flex_column">
         <GuestPresentation />
         <Head />

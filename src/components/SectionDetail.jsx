@@ -4,7 +4,9 @@ const SectionDetail = () => {
   return (
     <div className="container_section_detail flex_column box">
       <div className="rama_detail">
-        <img src="/images/oliva_rama_dos_par.webp" />
+        <div data-aos="fade-right">
+          <img src="/images/oliva_rama_dos_par.webp" />
+        </div>
       </div>
       <img
         className="img_curvas_doble_derecha_detail"
@@ -37,7 +39,8 @@ const SectionDetail = () => {
       </div>
       <div className="flex_column">
         <p style={{ width: "80%", maxWidth: "600px", textAlign: "center" }}>
-          Hemos reservado para nosotros los colores <b>Blanco y Verde</b> en esta ocasión. 
+          Hemos reservado para nosotros los colores <b>Blanco y Verde</b> en
+          esta ocasión.
         </p>
       </div>
       {/* <div className="flex_column">

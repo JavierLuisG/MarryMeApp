@@ -170,11 +170,13 @@ h3 {
   top: 2em;
   z-index: 2;
   width: 800px;
+  margin: auto;
 }
 
 .date_hr {
   width: 50%;
   position: relative;
+  margin: auto;
 }
 
 .date {
@@ -195,6 +197,7 @@ h3 {
 .line_bottom {
   width: 80%;
   max-width: 400px;
+  margin: auto;
 }
 
 .line_position {
@@ -206,7 +209,7 @@ h3 {
 
 .text_head {
   max-width: 600px;
-  margin-top: 1.5em;
+  margin: 1.5em auto;
 }
 
 .names_couple {

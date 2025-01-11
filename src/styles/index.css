@@ -206,19 +206,18 @@ h3 {
 
 .text_head {
   max-width: 600px;
-  width: 90%;
-  margin-top: 0.5em;
-  font-size: 1.5em;
+  margin-top: 1.5em;
 }
 
 .names_couple {
+  margin: 0.3em 0em;
   padding: 0.2em 0;
 }
 
 .text_secondary_p {
-  width: 90%;
+  width: 70%;
   max-width: 800px;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -239,6 +238,7 @@ h3 {
 }
 
 .card_presentation {
+  min-width: 20em;
   position: relative;
 }
 
@@ -467,7 +467,7 @@ h3 {
   .info_places {
     /* column */
     align-items: start;
-    gap: 1em;
+    gap: 1.3em;
 
     & a {
       width: 100%;
@@ -475,6 +475,8 @@ h3 {
 
     .section_info_places {
       width: 100%;
+      max-width: 15em;
+      margin: auto;
     }
 
     p {
@@ -485,6 +487,7 @@ h3 {
       text-align: center;
       font-weight: bold;
       font-size: 1.4em;
+      margin-bottom: 0.3em;
     }
   }
 }
@@ -521,11 +524,11 @@ h3 {
 
 .btn_card_places {
   /* row */
-  margin: auto;
+  margin: 1.3em auto;
   border: none;
   background-color: var(--primary-color);
   padding: 0.5em 5em;
-  border-radius: 1em;
+  border-radius: 0.6em;
   gap: 1em;
   cursor: pointer;
 
@@ -793,11 +796,11 @@ h3 {
 .container_gifts_card {
   margin: auto;
   width: 85%;
-  gap: 1em;
+  gap: 1.3em;
   border: 1px solid var(--secondary-color);
   background-color: var(--secondary-color);
   border-radius: 0.5em;
-  padding: 1em;
+  padding: 1.5em;
 
   h2 {
     color: var(--text-btn-color);
@@ -893,7 +896,7 @@ h3 {
   border: none;
   background-color: var(--primary-color);
   padding: 0.5em 5em;
-  border-radius: 1em;
+  border-radius: 0.6em;
   gap: 1em;
   cursor: pointer;
 
@@ -907,12 +910,12 @@ h3 {
 
   .text_btn_confirm {
     color: var(--pale-cream);
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
 .container_btn_confirm img {
-  width: 1.7em;
+  width: 1.4em;
 }
 
 :is(.container_confirm, .container_btn_confirm, .text_btn_confirm) {
@@ -1001,11 +1004,11 @@ h3 {
   }
 
   .img_onda_delgada3 {
-    bottom: calc(-1em - 28em);
+    bottom: calc(-1em - 33em);
   }
 
   .img_onda_delgada4 {
-    bottom: calc(-2em - 28.7em);
+    bottom: calc(-2em - 33.7em);
     transform: rotate(180deg) scaleX(1);
   }
 }

@@ -36,8 +36,8 @@ const SectionDetail = () => {
         </div>
       </div>
       <div className="flex_column">
-        <p style={{ width: "100%", textAlign: "center" }}>
-          Hemos reservado los colores<br /> <b>blanco y verde</b>  para esta ocasión. 
+        <p style={{ width: "80%", maxWidth: "600px", textAlign: "center" }}>
+          Hemos reservado para nosotros los colores <b>Blanco y Verde</b> en esta ocasión. 
         </p>
       </div>
       {/* <div className="flex_column">

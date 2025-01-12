@@ -453,6 +453,7 @@ h3 {
   /* column */
   gap: 1em;
   position: relative;
+  min-width: 21em;
 
   .content_info_places {
     /* row */
@@ -496,7 +497,6 @@ h3 {
 }
 
 .cinta_container {
-  max-width: 500px;
   width: 100%;
 }
 
@@ -558,6 +558,7 @@ h3 {
   position: absolute;
   top: 0em;
   width: 100%;
+  z-index: 3;
 }
 
 .img_rama_hortensia_places {

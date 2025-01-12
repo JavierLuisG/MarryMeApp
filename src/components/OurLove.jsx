@@ -7,7 +7,7 @@ const OurLove = () => {
     autoplay: true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
-    nav: true,
+    nav: false,
     dots: true,
     smartSpeed: 3000,
     margin: 10,

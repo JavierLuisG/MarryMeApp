@@ -1,4 +1,22 @@
+import OwlCarousel from "react-owl-carousel";
+
 const OurLove = () => {
+  const options = {
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: true,
+    smartSpeed: 3000,
+    margin: 10,
+    responsive: {
+      0: { items: 1 },
+      1000: { items: 2 },
+    },
+  };
+
   return (
     <div className="container_section_ourlove flex_column box">
       <div className="rama_detail">
@@ -21,13 +39,24 @@ const OurLove = () => {
       </div>
       <div className="container_slider">
         <div className="slider">
-          <img src="/images/IMG_2710.jpg" alt="" />
-          <img src="/images/IMG_2469.jpg" alt="" />
-          <img src="/images/IMG_2625.jpg" alt="" />
-          <img src="/images/IMG_2860.jpg" alt="" />
-          <img src="/images/IMG_2696.jpg" alt="" />
+          <OwlCarousel className="owl-theme" {...options}>
+            <div className="item">
+              <img src="/images/IMG_2710.jpg" />
+            </div>
+            <div className="item">
+              <img src="/images/IMG_2696.jpg" />
+            </div>
+            <div className="item">
+              <img src="/images/IMG_2860.jpg" />
+            </div>
+            <div className="item">
+              <img src="/images/IMG_2625.jpg" />
+            </div>
+            <div className="item">
+              <img src="/images/IMG_2469.jpg" />
+            </div>
+          </OwlCarousel>
         </div>
-        <img className="dots_icon" src="/dots-3.svg" alt="" />
         <div className="container_txt_biblica">
           <p>
             "Más valen dos que uno solo, pues obtienen mayor ganancia de su

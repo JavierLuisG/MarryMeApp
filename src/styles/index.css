@@ -730,7 +730,7 @@ h3 {
 
 .container_slider {
   width: 95%;
-  max-width: 850px;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -738,9 +738,7 @@ h3 {
 }
 
 .slider {
-  aspect-ratio: 10 / 7;
   width: 100%;
-  max-width: 800px;
   position: relative;
   display: flex;
   overflow-x: auto;
@@ -757,10 +755,6 @@ h3 {
   object-fit: cover;
   border-radius: 0.4em;
   scroll-snap-align: center;
-}
-
-.dots_icon {
-  width: 3em;
 }
 
 .container_txt_biblica {

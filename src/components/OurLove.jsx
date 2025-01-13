@@ -40,19 +40,19 @@ const OurLove = () => {
       <div className="container_slider">
         <div className="slider">
           <OwlCarousel className="owl-theme" {...options}>
-            <div className="item">
+            <div className="item item_img">
               <img src="/images/IMG_2710.jpg" />
             </div>
-            <div className="item">
+            <div className="item item_img">
               <img src="/images/IMG_2696.jpg" />
             </div>
-            <div className="item">
+            <div className="item item_img">
               <img src="/images/IMG_2860.jpg" />
             </div>
-            <div className="item">
+            <div className="item item_img">
               <img src="/images/IMG_2625.jpg" />
             </div>
-            <div className="item">
+            <div className="item item_img">
               <img src="/images/IMG_2469.jpg" />
             </div>
           </OwlCarousel>

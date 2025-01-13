@@ -154,7 +154,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_head {
   /* row box */
-  padding: 4em 0em 9em 0em;
+  padding: 2.5em 0em 6em 0em;
   position: relative;
 }
 
@@ -748,18 +748,19 @@ h3 {
   scrollbar-width: thin;
 }
 
-.slider img {
-  width: 100%;
-  left: 0;
-  position: sticky;
-  object-fit: cover;
-  border-radius: 0.4em;
-  scroll-snap-align: center;
+.item_img img {
+  border-radius: 0.5em;
+  height: 100%;
+}
+
+.owl-stage-outer {
+  margin-bottom: 1em;
 }
 
 .container_txt_biblica {
   width: 90%;
   max-width: 800px;
+  margin-top: 1em;
 
   p {
     font-size: 1.7em;
@@ -955,7 +956,7 @@ h3 {
 
   .container_section_ourlove,
   .container_section_detail {
-    padding-top: 9em;
+    padding-top: 8em;
   }
 
   .img_rama_hortensia_places,

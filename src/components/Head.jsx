@@ -5,7 +5,7 @@ const Head = () => {
   return (
     <div className="container_head flex_row box">
       <div className="recuadro flex_column">
-      <div data-aos="fade-up-left">
+      <div data-aos="fade-down-right">
           <div className="date_hr">
             <hr
               aria-orientation="horizontal"

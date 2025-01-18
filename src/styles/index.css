@@ -922,6 +922,43 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------- */
+/* =========================== FOOTER Section =========================== */
+/* ---------------------------------------------------------------------- */
+.container_footer {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  justify-content: space-evenly;
+  background-color: #b6c4bd;
+}
+
+.container_text {
+  font-size: 0.9em;
+  gap: 0.3em;
+}
+
+.first_text {
+  gap: 0.4em;
+}
+
+.container_ig {
+  gap: 0.5em;
+  
+  img {
+    width: 1.2em;
+    fill-opacity: var(--secondary-color);
+  }
+}
+
+.line_footer {
+  display: none;
+}
+
+:is(.container_footer) {
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
+}
+
+/* ---------------------------------------------------------------------- */
 /* ============================== NOT FOUND ============================= */
 /* ---------------------------------------------------------------------- */
 .container_not_found {

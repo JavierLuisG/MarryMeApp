@@ -8,6 +8,7 @@ import SectionDetail from "../components/SectionDetail";
 import Gifts from "../components/Gifts";
 import ConfirmAttendance from "../components/ConfirmAttendance";
 import BgMusic from "../components/BgMusic";
+import Footer from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -22,6 +23,7 @@ export const Home = () => {
         <SectionDetail />
         <Gifts />
         <ConfirmAttendance />
+        <Footer />
       </div>
     </div>
   );

@@ -927,13 +927,13 @@ h3 {
 .container_footer {
   width: 100%;
   text-align: center;
-  padding: 2em;
+  padding: 3em;
   justify-content: space-evenly;
   background-color: #b6c4bd;
 }
 
 .container_text {
-  font-size: 0.9em;
+  font-size: 1em;
   gap: 0.3em;
 }
 

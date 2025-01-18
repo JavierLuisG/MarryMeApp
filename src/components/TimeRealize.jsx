@@ -4,10 +4,21 @@ import date from "../mocks/date.json";
 
 export const TimeRealize = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [finalTime, setFinalTime] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      const timeLeft = calculateTimeLeft();
+      setTimeLeft(timeLeft);
+      if (
+        timeLeft.days === 0 &&
+        timeLeft.hours === 0 &&
+        timeLeft.minutes === 0 &&
+        timeLeft.seconds === 0
+      ) {
+        setFinalTime(true);
+        clearInterval(intervalId);
+      }
     }, 1000);
     return () => clearInterval(intervalId); // Limpia el intervalo al desmontar el componente
   }, []);
@@ -30,29 +41,29 @@ export const TimeRealize = () => {
       <div className="title_time">
         <h2>¡Te esperamos!</h2>
       </div>
-      {/* <div data-aos="fade-down-left"> */}
-        <div className="container_circle_time flex_column">
-          <div className="container_card_time flex_row">
-            <NumberTime value={timeLeft.days} text={date[1].days} />
-            <hr aria-orientation="vertical" className="hr_vertical_line" />
-            <NumberTime value={timeLeft.hours} text={date[1].hours} />
-            <hr aria-orientation="vertical" className="hr_vertical_line" />
-            <NumberTime value={timeLeft.minutes} text={date[1].minutes} />
-            <hr aria-orientation="vertical" className="hr_vertical_line" />
-            <NumberTime value={timeLeft.seconds} text={date[1].seconds} />
-          </div>
-          <div className="oliva_contador_redondo_timerealize">
-            <img src="/images/oliva_contador_redondo.png" />
-          </div>
-          <div className="img_onda_desc_timerealize">
-            <img src="/img_onda_desc.svg" />
-          </div>
-          {/* <img
-          className="img_anillos_timerealize"
-          src="/images/anillo-de-bodas-verde.png"
-        /> */}
+      <div className="container_circle_time flex_column">
+        <div className="container_card_time flex_row">
+          {!finalTime ? (
+            <>
+              <NumberTime value={timeLeft.days} text={date[1].days} />
+              <hr aria-orientation="vertical" className="hr_vertical_line" />
+              <NumberTime value={timeLeft.hours} text={date[1].hours} />
+              <hr aria-orientation="vertical" className="hr_vertical_line" />
+              <NumberTime value={timeLeft.minutes} text={date[1].minutes} />
+              <hr aria-orientation="vertical" className="hr_vertical_line" />
+              <NumberTime value={timeLeft.seconds} text={date[1].seconds} />
+            </>
+          ) : (
+            <h2>Gracias por acompañarnos</h2>
+          )}
         </div>
-      {/* </div> */}
+        <div className="oliva_contador_redondo_timerealize">
+          <img src="/images/oliva_contador_redondo.png" />
+        </div>
+        <div className="img_onda_desc_timerealize">
+          <img src="/img_onda_desc.svg" />
+        </div>
+      </div>
     </div>
   );
 };

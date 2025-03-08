@@ -1014,7 +1014,31 @@ width: 100%;
 }
 
 @media (max-width: 730px) {
-  .img_rama_hortensia_places,
+  .img_rama_hortensia_places {
+    top: calc(5.5em + -3em);
+
+    & img {
+      width: 11em;
+    }
+  }
+
+  .img_rama_hortensia_2_places {
+    top: calc(2.5em + -3em);
+
+    & img {
+      width: 11em;
+    }
+  }
+
+  
+  .img_hortensia_places {
+    top: calc(3.5em + -3em);
+    
+    & img {
+      width: 7em;
+    }
+  }
+
   .img_rama_hortensia_gifts {
     top: calc(5.5em + 1.4em);
 
@@ -1023,7 +1047,6 @@ width: 100%;
     }
   }
 
-  .img_rama_hortensia_2_places,
   .img_rama_hortensia_2_gifts {
     top: calc(2.5em + 1.4em);
 
@@ -1032,7 +1055,6 @@ width: 100%;
     }
   }
 
-  .img_hortensia_places,
   .img_hortensia_gifts {
     top: calc(3.5em + 1.4em);
 

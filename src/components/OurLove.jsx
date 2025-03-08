@@ -4,12 +4,13 @@ const OurLove = () => {
   const options = {
     items: 1,
     loop: true,
-    autoplay: true,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true,
+    // autoplay: true,
+    // autoplayTimeout: 4000,
+    // autoplayHoverPause: true,
     nav: false,
     dots: true,
-    smartSpeed: 3000,
+    // smartSpeed: 3000,
+    smartSpeed: 500,
     margin: 10,
     responsive: {
       0: { items: 1 },
@@ -41,19 +42,19 @@ const OurLove = () => {
         <div className="slider">
           <OwlCarousel className="owl-theme" {...options}>
             <div className="item item_img">
-              <img src="/images/IMG_2710.jpg" />
+              <img src="/images/1.jpg" />
             </div>
             <div className="item item_img">
-              <img src="/images/IMG_2696.jpg" />
+              <img src="/images/2.jpg" />
             </div>
             <div className="item item_img">
-              <img src="/images/IMG_2860.jpg" />
+              <img src="/images/3.jpg" />
             </div>
             <div className="item item_img">
-              <img src="/images/IMG_2625.jpg" />
+              <img src="/images/4.jpg" />
             </div>
             <div className="item item_img">
-              <img src="/images/IMG_2469.jpg" />
+              <img src="/images/5.jpg" />
             </div>
           </OwlCarousel>
         </div>

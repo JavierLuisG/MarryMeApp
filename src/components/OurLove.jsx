@@ -7,7 +7,7 @@ const OurLove = () => {
     // autoplay: true,
     // autoplayTimeout: 4000,
     // autoplayHoverPause: true,
-    // smartSpeed: 300, // Ajustado para un movimiento más fluido
+    smartSpeed: 1000, // Ajustado para un movimiento más fluido
     fluidSpeed: true, // Permite una mejor transición
     slideTransition: "ease-in-out", // Suaviza el desplazamiento
     nav: false,

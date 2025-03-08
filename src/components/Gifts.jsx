@@ -17,17 +17,12 @@ const Gifts = () => {
             </div>
           </div>
           <div className="container_gifts_card flex_column">
-            {/* <h2>Regalos</h2> */}
             <img className="gifts_icon" src="/money-gift.svg" alt="" />
             <div className="gifts_content flex_row">
               <div>
                 <p>
-                  {/* Te invitamos a ser parte de nuestra lluvia de sobres. */}
-                  Nuestro mejor regalo es tu compañía, pero si quieres tener un
-                  detalle, habrá lluvia de sobres.
-                  {/* <br />
-              <br />
-              ¡Gracias por compartir este momento tan importante con nosotros! */}
+                  Tu compañía es nuestro mejor regalo. Si deseas tener un
+                  detalle especial, habrá lluvia de sobres.
                 </p>
               </div>
             </div>

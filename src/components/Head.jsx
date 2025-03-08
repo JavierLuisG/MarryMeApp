@@ -11,12 +11,12 @@ const Head = () => {
               aria-orientation="horizontal"
               className="hr_line line_position"
             />
-            <span className="date">15.02.2025</span>
+            <span className="date">27.12.2025</span>
           </div>
           <h1 className="names_couple flex_row">
             <span>
-              Cristian <br />&<br />
-              Mariapaz
+              Marido <br />&<br />
+              Mujer
             </span>
           </h1>
           <hr aria-orientation="horizontal" className="hr_line line_bottom" />

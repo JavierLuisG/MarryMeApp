@@ -25,8 +25,8 @@ const SectionDetail = () => {
         </div>
         <div className="flex_column">
           <div className="title_dress_code">
-            {/* <p>Dress Code</p> */}
-            <p>FORMAL</p>
+            <p>DRESS CODE</p>
+            <p>Formal</p>
           </div>
           <div className="hr_heart flex_column">
             <hr aria-orientation="vertical" className="hr_line_detail_heart" />
@@ -39,17 +39,17 @@ const SectionDetail = () => {
       </div>
       <div className="flex_column">
         <p style={{ width: "80%", maxWidth: "600px", textAlign: "center" }}>
-          Hemos reservado para nosotros los colores <b>Blanco y Verde</b> en
+          Hemos reservado para nosotros los colores <b>Blanco</b> y <b>Verde</b> en
           esta ocasión.
         </p>
       </div>
-      {/* <div className="flex_column">
+      <div className="flex_column">
         <p style={{ width: "100%", textAlign: "center" }}>
           Papá y mamá ¡disfrutemos de esta noche!
           <br />
           <b>niños dulces sueños.</b>
         </p>
-      </div> */}
+      </div>
     </div>
   );
 };

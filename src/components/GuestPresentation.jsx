@@ -6,11 +6,6 @@ const GuestPresentation = () => {
   const params = useParams();
   return (
     <div className="container_guest title flex_column box">
-      {/* <img
-        className="fondo_pareja"
-        src="/images/img_fondo_pareja_cym.jpg"
-        alt=""
-      /> */}
       <div className="card_presentation flex_column">
         <div className="img_oliva_grupo_ramas_guest">
           <img src="/images/oliva_grupo_ramas.webp" />

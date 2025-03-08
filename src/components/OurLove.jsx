@@ -63,6 +63,7 @@ const OurLove = () => {
             esfuerzo. Si uno cae, lo levantará su compañero; pero ¡ay del solo
             que cae!, que no tiene quien lo levante. [...] La cuerda de tres
             hilos no es fácil de romper."
+            <br />
             <span className="lectura"> Ecle 4, 9-12.</span>
           </p>
         </div>

@@ -1,21 +1,21 @@
 [
     {
         "title": "Ceremonia",
-        "date": { "title": "Día", "info": "Sábado 15 de febrero." },
+        "date": { "title": "Día", "info": "Sábado 27 de diciembre." },
         "hour": { "title": "Hora", "info": "15:30 hrs." },
-        "place": { "title": "Lugar", "info": "Parroquia la Asunción de Nuestra Señora." },
+        "place": { "title": "Lugar", "info": "Parroquia Ceremonial." },
         "place2": { "title": "Lugar", "info": "" },
-        "address": { "title": "Dirección", "info": "Calle 79 #28a-46" },
+        "address": { "title": "Dirección", "info": "Calle Ceremonial" },
         "parkinglot": { "title": "Parqueadero", "info": "4.671477541471893, -74.06651835566926"},
         "image": "/icon-church.svg"
     },
     {
         "title": "Recepción",
-        "date": { "title": "Día", "info": "Sábado 15 de febrero." },
-        "hour": { "title": "Hora", "info": "18:30 hrs." },
-        "place": { "title": "Lugar", "info": "Prato Eventos y Convenciones." },
+        "date": { "title": "Día", "info": "Sábado 27 de diciembre." },
+        "hour": { "title": "Hora", "info": "19:00 hrs." },
+        "place": { "title": "Lugar", "info": "Recepción Ceremonial." },
         "place2": { "title": "Lugar", "info": "" },
-        "address": { "title": "Dirección", "info": "Autopista Nte. #128C-31" },
+        "address": { "title": "Dirección", "info": "Dirección de recepción" },
         "parkinglot": { "title": "Parqueadero", "info": "4.714795891549721, -74.05332558430607"},
         "image": "/drink-glasses.svg"
     }

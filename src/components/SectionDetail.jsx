@@ -3,21 +3,6 @@ import React from "react";
 const SectionDetail = () => {
   return (
     <div className="container_section_detail flex_column box">
-      <div className="rama_detail">
-        <div data-aos="fade-right">
-          <img src="/images/oliva_rama_dos_par.webp" />
-        </div>
-      </div>
-      <img
-        className="img_curvas_doble_derecha_detail"
-        src="/img_curvas_doble_derecha.svg"
-      />
-      <div className="img_onda_delgada_detail1">
-        <img src="/img_onda_delgada.svg" />
-      </div>
-      <div className="img_onda_delgada_detail2">
-        <img src="/img_onda_delgada.svg" />
-      </div>
       <h2>Detalles</h2>
       <div className="flex_row">
         <div className="suit_container flex_column">

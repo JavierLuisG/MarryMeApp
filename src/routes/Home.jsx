@@ -9,6 +9,7 @@ import Gifts from "../components/Gifts";
 import ConfirmAttendance from "../components/ConfirmAttendance";
 import BgMusic from "../components/BgMusic";
 import Footer from "../components/Footer";
+import Arreglo from "../components/Arreglo";
 
 export const Home = () => {
   return (
@@ -17,9 +18,11 @@ export const Home = () => {
       <div className="container_home flex_column">
         <GuestPresentation />
         <Head />
+        <Arreglo />
         <OurLove />
         <TimeRealize />
         <Places />
+        <Arreglo />
         <SectionDetail />
         <Gifts />
         <ConfirmAttendance />

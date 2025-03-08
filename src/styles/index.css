@@ -49,7 +49,7 @@ h3 {
   width: 100%;
   background-color: var(--pale-cream);
   text-align: center;
-  padding: 7em 0em 5em 0em;
+  padding: 2em 0em;
   gap: 1.5em;
   background-image: url("/images/oliva_fondo.webp");
 }
@@ -154,7 +154,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_head {
   /* row box */
-  padding: 2.5em 0em 6em 0em;
+  padding: 1em 0em 4em 0em;
   position: relative;
 }
 
@@ -334,7 +334,6 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_time_realize {
   position: relative;
-  padding: 0em;
 }
 
 .img_onda_delgada_timerealize1 {
@@ -563,7 +562,7 @@ h3 {
 
 .img_rama_hortensia_places {
   position: absolute;
-  top: 5.5em;
+  top: 1em;
   z-index: 1;
   left: -2em;
   transform: rotate(-40deg);
@@ -575,7 +574,7 @@ h3 {
 
 .img_rama_hortensia_2_places {
   position: absolute;
-  top: 2.5em;
+  top: -2em;
   z-index: 1;
   left: -2em;
   transform: rotate(40deg) scaleY(-1);
@@ -587,7 +586,7 @@ h3 {
 
 .img_hortensia_places {
   position: relative;
-  top: 3.5em;
+  top: -1em;
   right: 2em;
   z-index: 2;
 
@@ -598,7 +597,7 @@ h3 {
 
 .img_onda_delgada3 {
   position: absolute;
-  bottom: -1em;
+  bottom: 3em;
   right: 10px;
 
   & img {
@@ -608,7 +607,7 @@ h3 {
 
 .img_onda_delgada4 {
   position: absolute;
-  bottom: -2em;
+  bottom: 2em;
   transform: rotate(180deg) scaleX(-1);
   right: 10px;
 
@@ -673,44 +672,6 @@ h3 {
   left: calc(50% - 1px);
 }
 
-.rama_detail {
-  position: absolute;
-  transform: rotate(-90deg);
-  left: -6em;
-  top: -2em;
-  z-index: 4;
-
-  & img {
-    width: 17em;
-  }
-}
-
-.img_curvas_doble_derecha_detail {
-  position: absolute;
-  z-index: 0;
-  top: 0em;
-}
-
-.img_onda_delgada_detail1 {
-  position: absolute;
-  top: 1em;
-  transform: scaleX(-1);
-
-  & img {
-    width: 98vw;
-  }
-}
-
-.img_onda_delgada_detail2 {
-  position: absolute;
-  top: 1em;
-  transform: rotate(180deg);
-
-  & img {
-    width: 98vw;
-  }
-}
-
 :is(.container_section_detail) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
@@ -720,7 +681,6 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_section_ourlove {
   position: relative;
-  padding: 0em 0em 4em 0em;
 }
 
 .foto_icon {
@@ -783,8 +743,7 @@ h3 {
 /* ============================ GIFTS Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_section_gifts {
-  padding-top: 0em;
-  padding-bottom: 3em;
+  padding: 2em 0em;
 }
 
 .section_gifts {
@@ -876,11 +835,9 @@ h3 {
 /* =========================== CONFIRM Section ========================== */
 /* ---------------------------------------------------------------------- */
 .container_confirm {
-  padding-top: 0;
-  width: 90%;
-  max-width: 1200px;
-
-  p {
+  padding-bottom: 4em !important;
+  
+  span {
     font-size: 1.2em;
   }
 }
@@ -891,7 +848,7 @@ h3 {
 }
 
 .container_btn_confirm {
-  width: 100%;
+  max-width: 1200px;
   border: none;
   background-color: var(--primary-color);
   padding: 0.5em 5em;
@@ -926,7 +883,6 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_footer {
   width: 100%;
-  /* background-color: #b6c4bd; */
   background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));  
 }
 
@@ -967,7 +923,7 @@ h3 {
 }
 
 .img {
-  width: 24px;
+  width: 1.5em;
   transition: transform 0.3s ease;
 }
 
@@ -976,6 +932,53 @@ h3 {
 }
 
 :is(.container_footer) {
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
+}
+
+/* ---------------------------------------------------------------------- */
+/* =============================== ARREGLO ============================== */
+/* ---------------------------------------------------------------------- */
+.arreglo_container {
+  position: relative;
+  width: 100%;
+}
+
+.rama_arreglo {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -6em;
+  top: -2em;
+  z-index: 4;
+
+  & img {
+    width: 17em;
+  }
+}
+
+.curvas_doble_derecha_arreglo {
+  width: 100%;
+  z-index: 2;
+  top: 0em;
+  left: 0;
+}
+
+.onda_delgada_arreglo1 {
+  width: 100%;
+  position: absolute;
+  top: 1em;
+  transform: scaleX(-1);
+  z-index: 3;
+}
+
+.onda_delgada_arreglo2 {
+width: 100%;
+  position: absolute;
+  top: 1em;
+  transform: rotate(180deg);
+  z-index: 3;
+}
+
+:is(.arreglo_container) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -994,15 +997,6 @@ h3 {
 /* ---------------------------------------------------------------------- */
 /* ======================= @MEDIAS QUERIES Section ====================== */
 /* ---------------------------------------------------------------------- */
-
-@media (min-width: 730px) {
-
-  .container_section_ourlove,
-  .container_section_detail {
-    padding-top: 9em;
-  }
-}
-
 @media (max-width: 780px) {
   .container_btns {
     flex-direction: column;
@@ -1020,12 +1014,6 @@ h3 {
 }
 
 @media (max-width: 730px) {
-
-  .container_section_ourlove,
-  .container_section_detail {
-    padding-top: 8em;
-  }
-
   .img_rama_hortensia_places,
   .img_rama_hortensia_gifts {
     top: calc(5.5em + 1.4em);
@@ -1054,14 +1042,6 @@ h3 {
   }
 }
 
-@media (min-width: 1000px) {
-
-  .container_section_ourlove,
-  .container_section_detail {
-    padding-top: 13em;
-  }
-}
-
 @media (max-width: 1200px) {
   .container_places {
     /* row box */
@@ -1070,11 +1050,11 @@ h3 {
   }
 
   .img_onda_delgada3 {
-    bottom: calc(-1em - 33em);
+    bottom: calc(-1em - 27em);
   }
 
   .img_onda_delgada4 {
-    bottom: calc(-2em - 33.7em);
+    bottom: calc(-2em - 27.7em);
     transform: rotate(180deg) scaleX(1);
   }
 }

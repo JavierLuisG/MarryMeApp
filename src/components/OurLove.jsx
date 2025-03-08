@@ -2,14 +2,7 @@ import OwlCarousel from "react-owl-carousel";
 
 const OurLove = () => {
   const options = {
-    // items: 1,
     loop: true,
-    // autoplay: true,
-    // autoplayTimeout: 4000,
-    // autoplayHoverPause: true,
-    // smartSpeed: 1000, // Ajustado para un movimiento más fluido
-    // fluidSpeed: true, // Permite una mejor transición
-    // slideTransition: "ease-in-out", // Suaviza el desplazamiento
     nav: false,
     dots: true,
     margin: 10,
@@ -21,21 +14,6 @@ const OurLove = () => {
 
   return (
     <div className="container_section_ourlove flex_column box">
-      <div className="rama_detail">
-        <div data-aos="fade-right">
-          <img src="/images/oliva_rama_dos_par.webp" />
-        </div>
-      </div>
-      <img
-        className="img_curvas_doble_derecha_detail"
-        src="/img_curvas_doble_derecha.svg"
-      />
-      <div className="img_onda_delgada_detail1">
-        <img src="/img_onda_delgada.svg" />
-      </div>
-      <div className="img_onda_delgada_detail2">
-        <img src="/img_onda_delgada.svg" />
-      </div>
       <div className="flex_column">
         <img className="foto_icon" src="/camera.svg" alt="" />
       </div>

@@ -5,11 +5,11 @@ const ConfirmAttendance = () => {
   
   return (
     <div className="container_confirm flex_column box">
-      <h2>Confirmar asistencia</h2>
-      <p>
-        Confírmanos tu asistencia por medio de WhatsApp.
-      </p>
-      <div>
+      <section>
+        <h2>Confirmar asistencia</h2>
+        <span>Confírmanos tu asistencia por medio de WhatsApp.</span>
+      </section>
+      <section>
         <div className="container_btns flex_row">
           <a
             href={`https://wa.me/${numContacts[0].husband}?text=${encodeURIComponent(
@@ -34,7 +34,7 @@ const ConfirmAttendance = () => {
             <div className="text_btn_confirm">Mujer</div>
           </a>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

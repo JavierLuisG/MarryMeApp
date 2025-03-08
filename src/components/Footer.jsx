@@ -2,24 +2,37 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container_footer flex_row">
-      <div className="container_text flex_column">
-        <div className="first_text flex_row">
-          <span>© 2025 - Javier Luis</span>
-          <div className="container_ig">
+    <footer className="container_footer flex_column">
+      <section className="footer_header flex_row">
+        <span className="text_header">Powered by</span>
+      </section>
+      <section className="body_container flex_row">
+        <div className="info_container flex_row">
+          <article className="text_info flex_column">
+            <span className="span_text_info">© 2025 - Javier Luis</span>
+            <span className="span_text_info">
+              Todos los derechos reservados.
+            </span>
+          </article>
+          <article className="networks_contact flex_row">
             <a
-              href="https://instagram.com/javierluisg94"
+              href="https://www.linkedin.com/in/javierluisg/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="flex_row" src="/instagram.svg" alt="" />
+              <img className="img" src="/linkedin.svg" alt="" />
             </a>
-          </div>
+            <a
+              href="https://github.com/JavierLuisG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="img" src="/github.svg" alt="" />
+            </a>
+          </article>
         </div>
-        <hr aria-orientation="horizontal" className="hr_line line_footer" />
-        <span>Todos los derechos reservados.</span>
-      </div>
-    </div>
+      </section>
+    </footer>
   );
 };
 

@@ -2,11 +2,11 @@
   "couple": {
     "husband": {
       "name": "Brayan",
-      "phone": "573209455269"
+      "phone": "573134931004"
     },
     "wife": {
       "name": "Natalia",
-      "phone": "573209455269"
+      "phone": "573229258560"
     }
   },
   "wedding": {
@@ -33,7 +33,7 @@
     {
       "title": "Recepción",
       "date": { "title": "Día", "info": "Sábado 30 de mayo." },
-      "hour": { "title": "Hora", "info": "19:00 hrs." },
+      "hour": { "title": "Hora", "info": "18:00 hrs." },
       "place": { "title": "Lugar", "info": "Frutos del Mar - Pescaderia y Cevicheria." },
       "address": { "title": "Dirección", "info": "Cl. 152 #103c-16" },
       "coordinates": "4.752181730052749, -74.09266000011014",
@@ -70,8 +70,8 @@
         "/images/4.jpg",
         "/images/5.jpg"
       ],
-      "quote": "\"Más valen dos que uno solo, pues obtienen mayor ganancia de su esfuerzo. Si uno cae, lo levantará su compañero; pero ¡ay del solo que cae!, que no tiene quien lo levante. [...] La cuerda de tres hilos no es fácil de romper.\"",
-      "quoteReference": "Ecle 4, 9-12."
+      "quote": "\"Describe la intensidad y durabilidad del amor verdadero, describiéndolo como una llama divina, fuerte como la muerte y la tumba, que ni las muchas aguas pueden apagar \"",
+      "quoteReference": "Cantares 8, 6-7."
     },
     "confirmAttendance": {
       "title": "Confirmar asistencia",

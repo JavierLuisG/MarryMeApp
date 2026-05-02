@@ -6,7 +6,7 @@
 	.st0 {
 		fill: #ffffff;
 		<!-- fill: #445a18; -->
-		stroke: #203500; /* Color del borde */
+		stroke: #c9a96e; /* Color del borde */
 		stroke-width: 1.5px; /* Grosor del borde */
 	}
 </style>

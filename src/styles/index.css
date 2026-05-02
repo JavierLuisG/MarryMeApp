@@ -364,26 +364,6 @@ h3 {
   position: relative;
 }
 
-.img_onda_delgada_timerealize1 {
-  position: absolute;
-  top: -5em;
-  transform: scaleX(-1);
-
-  & img {
-    width: 100vw;
-  }
-}
-
-.img_onda_delgada_timerealize2 {
-  position: absolute;
-  top: -5em;
-  transform: scaleX(-1);
-
-  & img {
-    width: 100vw;
-  }
-}
-
 .container_circle_time {
   position: relative;
   z-index: 2;
@@ -422,6 +402,7 @@ h3 {
   .text_date {
     font-size: 1.2em;
     font-weight: bolder;
+    color: var(--text-on-light-secondary);
   }
 }
 
@@ -437,19 +418,13 @@ h3 {
 .img_onda_desc_time_realize {
   position: absolute;
   z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   & img {
     width: 98vw;
   }
-}
-
-.img_anillos_timerealize {
-  position: absolute;
-  bottom: 3.5em;
-  left: 9em;
-  z-index: 2;
-  width: 3.5em;
-  transform: rotate(130deg);
 }
 
 .img_onda_desc_timerealize {
@@ -457,7 +432,7 @@ h3 {
   z-index: -1;
 
   & img {
-    width: 98vw;
+    width: 100vw;
   }
 }
 
@@ -487,9 +462,9 @@ h3 {
   background: rgba(245, 245, 245, 0.55);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--gold);
-  border-radius: 0.8em;
-  box-shadow: 0 4px 24px rgba(32, 53, 0, 0.10);
+  /* border: 1px solid var(--gold); */
+  /* border-radius: 0.8em; */
+  /* box-shadow: 0 4px 24px rgba(32, 53, 0, 0.10); */
   overflow: hidden;
 
   .content_info_places {
@@ -521,10 +496,12 @@ h3 {
     }
 
     p {
+      color: var(--text-on-light-secondary);
       text-align: center;
     }
-
+    
     .info_places_title {
+      color: var(--text-on-light);
       text-align: center;
       font-weight: bold;
       font-size: 1.4em;
@@ -539,7 +516,7 @@ h3 {
 
 .info_title {
   width: 100%;
-  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(90deg, var(--text-on-light), var(--hover-btn-color));
   color: var(--text-on-dark);
   font-weight: lighter;
   padding: 0.1em 0em;
@@ -572,7 +549,7 @@ h3 {
   border-radius: 0.6em;
   gap: 1em;
   cursor: pointer;
-  /* transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; */
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
   .text_map_card {
     color: var(--text-on-dark);
@@ -583,14 +560,14 @@ h3 {
   &:hover {
     background-color: var(--hover-btn-color);
     border-color: var(--gold-light);
-    /* transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3); */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
   }
 
   &:active {
     background-color: var(--btn-color);
-    /* transform: translateY(0);
-    box-shadow: none; */
+    transform: translateY(0);
+    box-shadow: none;
   }
   
   .map_icon {
@@ -712,7 +689,7 @@ h3 {
   height: 80%;
   margin: 1em 0em;
   border: none;
-  background-color: var(--secondary-color);
+  background-color: var(--gold);
   position: absolute;
   left: calc(50% - 1px);
 }
@@ -784,13 +761,15 @@ h3 {
   p {
     font-size: 1.7em;
     font-family: "Great Vibes", cursive;
+    color: var(--text-on-light-secondary);
   }
-
+  
   .lectura {
+    color: var(--text-on-light-secondary);
     text-align: center;
     font-weight: bold;
     font-size: 0.6em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Great Vibes", cursive;
   }
 }
 
@@ -815,7 +794,6 @@ h3 {
   width: 85%;
   gap: 1.3em;
   border: 1px solid var(--gold);
-  background: rgba(32, 53, 0, 0.72);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 0.5em;
@@ -830,7 +808,7 @@ h3 {
   }
 
   p {
-    color: var(--text-on-dark);
+    color: var(--text-on-light-secondary);
     font-size: 1.2em;
   }
 }

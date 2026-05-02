@@ -13,7 +13,7 @@ const CardPlaces = ({ info }) => {
         </div>
       </div>
       <div className="content_info_places flex_column">
-        <img className="img_places" src={info.image} alt="argollas" />
+        <img className="img_places" src={info.image} loading="lazy" alt="" />
         <div className="info_places flex_column">
           <div className="section_info_places">
             <p className="info_places_title">{info.date.title}</p>

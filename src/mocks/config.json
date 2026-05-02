@@ -62,6 +62,13 @@
       "ended": "Gracias por acompañarnos"
     },
     "ourLove": {
+      "photos": [
+        "/images/1.jpg",
+        "/images/2.jpg",
+        "/images/3.jpg",
+        "/images/4.jpg",
+        "/images/5.jpg"
+      ],
       "quote": "\"Más valen dos que uno solo, pues obtienen mayor ganancia de su esfuerzo. Si uno cae, lo levantará su compañero; pero ¡ay del solo que cae!, que no tiene quien lo levante. [...] La cuerda de tres hilos no es fácil de romper.\"",
       "quoteReference": "Ecle 4, 9-12."
     },

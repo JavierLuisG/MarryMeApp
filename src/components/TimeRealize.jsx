@@ -58,10 +58,10 @@ export const TimeRealize = () => {
           )}
         </div>
         <div className="oliva_contador_redondo_timerealize">
-          <img src="/images/oliva_contador_redondo.png" />
+          <img src="/images/oliva_contador_redondo.png" loading="lazy" alt="" />
         </div>
         <div className="img_onda_desc_timerealize">
-          <img src="/img_onda_desc.svg" />
+          <img src="/img_onda_desc.svg" loading="lazy" alt="" />
         </div>
       </div>
     </div>

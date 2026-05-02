@@ -1,4 +1,5 @@
 import React from "react";
+import config from "../mocks/config.json";
 
 const Gifts = () => {
   return (
@@ -7,13 +8,13 @@ const Gifts = () => {
         <div data-aos="zoom-in-up">
           <div className="container_flor_ramas_gifts">
             <div className="img_hortensia_gifts">
-              <img src="/images/hortensia_final.png" />
+              <img src="/images/hortensia_final.png" loading="lazy" alt="" />
             </div>
             <div className="img_rama_hortensia_gifts">
-              <img src="/images/oliva_rama_uno_par.webp" />
+              <img src="/images/oliva_rama_uno_par.webp" loading="lazy" alt="" />
             </div>
             <div className="img_rama_hortensia_2_gifts">
-              <img src="/images/oliva_rama_uno_par.webp" />
+              <img src="/images/oliva_rama_uno_par.webp" loading="lazy" alt="" />
             </div>
           </div>
           <div className="container_gifts_card flex_column">
@@ -21,8 +22,7 @@ const Gifts = () => {
             <div className="gifts_content flex_row">
               <div>
                 <p>
-                  Tu compañía es nuestro mejor regalo. Si deseas tener un
-                  detalle especial, habrá lluvia de sobres.
+                  {config.gifts.message}
                 </p>
               </div>
             </div>

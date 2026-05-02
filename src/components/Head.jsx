@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import config from "../mocks/config.json";
 
 const Head = () => {
   const params = useParams();
@@ -11,18 +12,17 @@ const Head = () => {
               aria-orientation="horizontal"
               className="hr_line line_position"
             />
-            <span className="date">27.12.2025</span>
+            <span className="date">{config.wedding.displayDate}</span>
           </div>
           <h1 className="names_couple flex_row">
             <span>
-              Marido <br />&<br />
-              Mujer
+              {config.couple.husband.name} <br />&<br />
+              {config.couple.wife.name}
             </span>
           </h1>
           <hr aria-orientation="horizontal" className="hr_line line_bottom" />
           <p className="text_head text_secondary_p">
-            Llenos de gratitud, hemos encontrado en Dios y en el amor mutuo, la
-            fuerza para dar este paso. Te invitamos a acompañarnos en este día.
+            {config.texts.head.invitation}
           </p>
         </div>
       </div>

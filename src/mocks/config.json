@@ -1,0 +1,83 @@
+{
+  "couple": {
+    "husband": {
+      "name": "Marido",
+      "phone": "573209455269"
+    },
+    "wife": {
+      "name": "Mujer",
+      "phone": "573209455269"
+    }
+  },
+  "wedding": {
+    "date": "2025-12-27T15:30:00",
+    "displayDate": "27.12.2025",
+    "countdown": {
+      "days": "días",
+      "hours": "hrs",
+      "minutes": "min",
+      "seconds": "seg"
+    }
+  },
+  "places": [
+    {
+      "title": "Ceremonia",
+      "date": { "title": "Día", "info": "Sábado 27 de diciembre." },
+      "hour": { "title": "Hora", "info": "15:30 hrs." },
+      "place": { "title": "Lugar", "info": "Parroquia Ceremonial." },
+      "address": { "title": "Dirección", "info": "Calle Ceremonial" },
+      "coordinates": "4.671275695145204, -74.06657677193387",
+      "parkinglot": { "title": "Parqueadero", "coordinates": "4.671477541471893, -74.06651835566926" },
+      "image": "/icon-church.svg"
+    },
+    {
+      "title": "Recepción",
+      "date": { "title": "Día", "info": "Sábado 27 de diciembre." },
+      "hour": { "title": "Hora", "info": "19:00 hrs." },
+      "place": { "title": "Lugar", "info": "Recepción Ceremonial." },
+      "address": { "title": "Dirección", "info": "Dirección de recepción" },
+      "coordinates": "4.715041171152234, -74.05303419309324",
+      "parkinglot": { "title": "Parqueadero", "coordinates": "4.714795891549721, -74.05332558430607" },
+      "image": "/drink-glasses.svg"
+    }
+  ],
+  "dresscode": {
+    "style": "Formal",
+    "reservedColors": ["Blanco", "Verde"],
+    "message": "Papá y mamá ¡disfrutemos de esta noche!",
+    "noKids": "niños dulces sueños."
+  },
+  "gifts": {
+    "message": "Tu compañía es nuestro mejor regalo. Si deseas tener un detalle especial, habrá lluvia de sobres."
+  },
+  "texts": {
+    "guestPresentation": {
+      "announcement": "¡Nos casamos!",
+      "guestFallback": "Estimado invitado"
+    },
+    "head": {
+      "invitation": "Llenos de gratitud, hemos encontrado en Dios y en el amor mutuo, la fuerza para dar este paso. Te invitamos a acompañarnos en este día."
+    },
+    "countdown": {
+      "title": "¡Te esperamos!",
+      "ended": "Gracias por acompañarnos"
+    },
+    "ourLove": {
+      "photos": [
+        "/images/1.jpg",
+        "/images/2.jpg",
+        "/images/3.jpg",
+        "/images/4.jpg",
+        "/images/5.jpg"
+      ],
+      "quote": "\"Más valen dos que uno solo, pues obtienen mayor ganancia de su esfuerzo. Si uno cae, lo levantará su compañero; pero ¡ay del solo que cae!, que no tiene quien lo levante. [...] La cuerda de tres hilos no es fácil de romper.\"",
+      "quoteReference": "Ecle 4, 9-12."
+    },
+    "confirmAttendance": {
+      "title": "Confirmar asistencia",
+      "subtitle": "Confírmanos tu asistencia por medio de WhatsApp.",
+      "hint": "Al presionar se abrirá WhatsApp",
+      "whatsappMessage": "Hola 👋, quiero confirmar mi asistencia a tu boda 💒 💍."
+    }
+  }
+}

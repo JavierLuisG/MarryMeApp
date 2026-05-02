@@ -708,13 +708,22 @@ h3 {
   scrollbar-width: thin;
 }
 
-.item_img img {
-  border-radius: 0.5em;
-  height: 100%;
+.item_img {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
 }
 
-.owl-stage-outer {
-  margin-bottom: 1em;
+.item_img img {
+  border-radius: 0.5em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 1000px) {
+  .item_img {
+    flex: 0 0 calc(50% - 5px);
+  }
 }
 
 .container_txt_biblica {
@@ -872,6 +881,14 @@ h3 {
 
 .container_btn_confirm img {
   width: 1.4em;
+}
+
+.text_confirm_hint {
+  margin-top: 0.8em;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  opacity: 0.75;
+  text-align: center;
 }
 
 :is(.container_confirm, .container_btn_confirm, .text_btn_confirm) {

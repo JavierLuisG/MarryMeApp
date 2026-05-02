@@ -5,9 +5,6 @@ import NotFound from "./routes/NotFound";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import "owl.carousel";
-import "owl.carousel/dist/assets/owl.carousel.min.css";
-import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
 function App() {
   useEffect(() => {
@@ -29,6 +26,7 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path={`${routes.home}`} element={<Home />} />
         <Route path={`${routes.home}/:name`} element={<Home />} />
         <Route path={`${routes.notFound}`} element={<NotFound />} />
       </Routes>

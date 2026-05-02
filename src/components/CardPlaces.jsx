@@ -5,11 +5,11 @@ const CardPlaces = ({ info }) => {
     <div className="container_card_places flex_column">
       <div className="cinta_container flex_row">
         <div className="img_cinta1">
-          <img src="/img_cinta1.svg" />
+          <img src="/img_cinta1.svg" alt="" />
         </div>
         <h3 className="info_title">{info.title}</h3>
         <div className="img_cinta2">
-          <img src="/img_cinta2.svg" />
+          <img src="/img_cinta2.svg" alt="" />
         </div>
       </div>
       <div className="content_info_places flex_column">

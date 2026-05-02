@@ -19,7 +19,7 @@ const ConfirmAttendance = () => {
             rel="noopener noreferrer"
             className="container_btn_confirm flex_row"
           >
-            <img src="/whatsapp.svg" />
+            <img src="/whatsapp.svg" alt="" />
             <div className="text_btn_confirm">{config.couple.husband.name}</div>
           </a>
           <a
@@ -30,10 +30,11 @@ const ConfirmAttendance = () => {
             rel="noopener noreferrer"
             className="container_btn_confirm flex_row"
           >
-            <img src="/whatsapp.svg" />
+            <img src="/whatsapp.svg" alt="" />
             <div className="text_btn_confirm">{config.couple.wife.name}</div>
           </a>
         </div>
+        <p className="text_confirm_hint">{config.texts.confirmAttendance.hint}</p>
       </section>
     </div>
   );

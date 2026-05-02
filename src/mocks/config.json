@@ -52,7 +52,8 @@
   },
   "texts": {
     "guestPresentation": {
-      "announcement": "¡Nos casamos!"
+      "announcement": "¡Nos casamos!",
+      "guestFallback": "Estimado invitado"
     },
     "head": {
       "invitation": "Llenos de gratitud, hemos encontrado en Dios y en el amor mutuo, la fuerza para dar este paso. Te invitamos a acompañarnos en este día."
@@ -75,6 +76,7 @@
     "confirmAttendance": {
       "title": "Confirmar asistencia",
       "subtitle": "Confírmanos tu asistencia por medio de WhatsApp.",
+      "hint": "Al presionar se abrirá WhatsApp",
       "whatsappMessage": "Hola 👋, quiero confirmar mi asistencia a tu boda 💒 💍."
     }
   }

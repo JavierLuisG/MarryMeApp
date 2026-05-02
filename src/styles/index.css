@@ -883,6 +883,14 @@ h3 {
   width: 1.4em;
 }
 
+.text_confirm_hint {
+  margin-top: 0.8em;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  opacity: 0.75;
+  text-align: center;
+}
+
 :is(.container_confirm, .container_btn_confirm, .text_btn_confirm) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }

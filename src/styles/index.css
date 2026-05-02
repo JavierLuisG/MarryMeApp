@@ -16,6 +16,10 @@
   --gold: #c9a96e;
   --gold-light: #e8d5a3;
 
+  /* text colors */
+  --text-on-light: #9B774C;  /* text sobre fondos claros / sin fondo */
+  --text-on-dark: #ffffff;   /* text sobre fondos oscuros / botones / banners */
+
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
@@ -24,7 +28,7 @@
 * {
   padding: 0;
   margin: 0;
-  color: var(--primary-color);
+  color: var(--text-on-light);
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -52,7 +56,7 @@ h4 {
 h1 {
   font-size: 3.5em;
   font-weight: bolder;
-  color: var(--text-primary);
+  color: var(--text-on-light);
 }
 
 h2 {
@@ -306,7 +310,7 @@ h3 {
 .text_cinta {
   width: 100%;
   background-color: var(--text-btn-color);
-  color: var(--primary-color);
+  color: var(--text-on-light);
   border: 1px solid var(--gold);
   font-weight: lighter;
   font-size: 1.5em;
@@ -535,7 +539,7 @@ h3 {
 .info_title {
   width: 100%;
   background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-  color: var(--gold-light);
+  color: var(--text-on-dark);
   font-weight: lighter;
   padding: 0.1em 0em;
   text-align: center;
@@ -570,7 +574,7 @@ h3 {
   /* transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; */
 
   .text_map_card {
-    color: var(--gold-light);
+    color: var(--text-on-dark);
     font-size: 1.2em;
     padding-right: 0.5em;
   }
@@ -707,7 +711,7 @@ h3 {
   height: 80%;
   margin: 1em 0em;
   border: none;
-  background-color: var(--gold);
+  background-color: var(--secondary-color);
   position: absolute;
   left: calc(50% - 1px);
 }
@@ -820,12 +824,12 @@ h3 {
   z-index: 0;
 
   h2 {
-    color: var(--gold-light);
+    color: var(--text-on-dark);
     font-weight: lighter;
   }
 
   p {
-    color: var(--text-btn-color);
+    color: var(--text-on-dark);
     font-size: 1.2em;
   }
 }
@@ -932,7 +936,7 @@ h3 {
   }
 
   .text_btn_confirm {
-    color: var(--gold-light);
+    color: var(--text-on-dark);
     font-size: 1.2em;
   }
 }
@@ -944,7 +948,7 @@ h3 {
 .text_confirm_hint {
   margin-top: 0.8em;
   font-size: 0.9em;
-  color: var(--secondary-color);
+  color: var(--text-on-light);
   opacity: 0.75;
   text-align: center;
 }
@@ -970,7 +974,7 @@ h3 {
 .text_header {
   font-size: 1.2em;
   font-weight: 600;
-  color: white;
+  color: var(--text-on-dark);
 }
 
 .body_container {
@@ -993,7 +997,7 @@ h3 {
 }
 
 .span_text_info {
-  color: white;
+  color: var(--text-on-dark);
   font-size: 1.1em;
 }
 

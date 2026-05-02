@@ -1,10 +1,5 @@
-import infoPlaces from "../mocks/info.json";
-
 const CardPlaces = ({ info }) => {
-  const ceremonia = "4.671275695145204, -74.06657677193387";
-  const recepcion = "4.715041171152234, -74.05303419309324";
-  const destino = info.title === infoPlaces[0].title ? ceremonia : recepcion;
-  const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${destino}`;
+  const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${info.coordinates}`;
 
   return (
     <div className="container_card_places flex_column">

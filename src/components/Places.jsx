@@ -1,5 +1,5 @@
 import CardPlaces from "./CardPlaces";
-import infoPlaces from "../mocks/info.json";
+import config from "../mocks/config.json";
 
 const Places = () => {
   return (
@@ -23,7 +23,7 @@ const Places = () => {
           </div>
         </div>
       </div>
-      {infoPlaces.map((info, index) => (
+      {config.places.map((info, index) => (
         <CardPlaces key={index} info={info} />
       ))}
     </div>

@@ -1,18 +1,18 @@
-import numContacts from "../mocks/numContact.json";
+import config from "../mocks/config.json";
 
 const ConfirmAttendance = () => {
-  const waMessage = `Hola 👋, quiero confirmar mi asistencia a tu boda 💒 💍.`;
+  const waMessage = config.texts.confirmAttendance.whatsappMessage;
   
   return (
     <div className="container_confirm flex_column box">
       <section>
-        <h2>Confirmar asistencia</h2>
-        <span>Confírmanos tu asistencia por medio de WhatsApp.</span>
+        <h2>{config.texts.confirmAttendance.title}</h2>
+        <span>{config.texts.confirmAttendance.subtitle}</span>
       </section>
       <section>
         <div className="container_btns flex_row">
           <a
-            href={`https://wa.me/${numContacts[0].husband}?text=${encodeURIComponent(
+            href={`https://wa.me/${config.couple.husband.phone}?text=${encodeURIComponent(
               waMessage
             )}`}
             target="_blank"
@@ -20,10 +20,10 @@ const ConfirmAttendance = () => {
             className="container_btn_confirm flex_row"
           >
             <img src="/whatsapp.svg" />
-            <div className="text_btn_confirm">Marido</div>
+            <div className="text_btn_confirm">{config.couple.husband.name}</div>
           </a>
           <a
-            href={`https://wa.me/${numContacts[1].wife}?text=${encodeURIComponent(
+            href={`https://wa.me/${config.couple.wife.phone}?text=${encodeURIComponent(
               waMessage
             )}`}
             target="_blank"
@@ -31,7 +31,7 @@ const ConfirmAttendance = () => {
             className="container_btn_confirm flex_row"
           >
             <img src="/whatsapp.svg" />
-            <div className="text_btn_confirm">Mujer</div>
+            <div className="text_btn_confirm">{config.couple.wife.name}</div>
           </a>
         </div>
       </section>

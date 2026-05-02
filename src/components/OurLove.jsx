@@ -1,4 +1,5 @@
 import OwlCarousel from "react-owl-carousel";
+import config from "../mocks/config.json";
 
 const OurLove = () => {
   const options = {
@@ -39,12 +40,9 @@ const OurLove = () => {
         </div>
         <div className="container_txt_biblica">
           <p>
-            "Más valen dos que uno solo, pues obtienen mayor ganancia de su
-            esfuerzo. Si uno cae, lo levantará su compañero; pero ¡ay del solo
-            que cae!, que no tiene quien lo levante. [...] La cuerda de tres
-            hilos no es fácil de romper."
+            {config.texts.ourLove.quote}
             <br />
-            <span className="lectura"> Ecle 4, 9-12.</span>
+            <span className="lectura"> {config.texts.ourLove.quoteReference}</span>
           </p>
         </div>
       </div>

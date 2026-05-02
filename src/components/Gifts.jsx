@@ -1,4 +1,5 @@
 import React from "react";
+import config from "../mocks/config.json";
 
 const Gifts = () => {
   return (
@@ -21,8 +22,7 @@ const Gifts = () => {
             <div className="gifts_content flex_row">
               <div>
                 <p>
-                  Tu compañía es nuestro mejor regalo. Si deseas tener un
-                  detalle especial, habrá lluvia de sobres.
+                  {config.gifts.message}
                 </p>
               </div>
             </div>

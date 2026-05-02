@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import config from "../mocks/config.json";
 
 const GuestPresentation = () => {
   // const imgjson = imgJson;
@@ -18,7 +19,7 @@ const GuestPresentation = () => {
             <div className="img_cinta_guest1">
               <img src="/img_cinta3.svg" />
             </div>
-            <h3 className="text_cinta">¡Nos casamos!</h3>
+            <h3 className="text_cinta">{config.texts.guestPresentation.announcement}</h3>
             <div className="img_cinta_guest2">
               <img src="/img_cinta4.svg" />
             </div>

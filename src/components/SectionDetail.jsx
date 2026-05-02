@@ -1,4 +1,5 @@
 import React from "react";
+import config from "../mocks/config.json";
 
 const SectionDetail = () => {
   return (
@@ -11,7 +12,7 @@ const SectionDetail = () => {
         <div className="flex_column">
           <div className="title_dress_code">
             <p>DRESS CODE</p>
-            <p>Formal</p>
+            <p>{config.dresscode.style}</p>
           </div>
           <div className="hr_heart flex_column">
             <hr aria-orientation="vertical" className="hr_line_detail_heart" />
@@ -24,15 +25,19 @@ const SectionDetail = () => {
       </div>
       <div className="flex_column">
         <p style={{ width: "80%", maxWidth: "600px", textAlign: "center" }}>
-          Hemos reservado para nosotros los colores <b>Blanco</b> y <b>Verde</b> en
-          esta ocasión.
+          Hemos reservado para nosotros los colores{" "}
+          {config.dresscode.reservedColors.map((color, i) => (
+            <React.Fragment key={color}>
+              <b>{color}</b>{i < config.dresscode.reservedColors.length - 1 ? " y " : ""}
+            </React.Fragment>
+          ))}{" "}en esta ocasión.
         </p>
       </div>
       <div className="flex_column">
         <p style={{ width: "100%", textAlign: "center" }}>
-          Papá y mamá ¡disfrutemos de esta noche!
+          {config.dresscode.message}
           <br />
-          <b>niños dulces sueños.</b>
+          <b>{config.dresscode.noKids}</b>
         </p>
       </div>
     </div>

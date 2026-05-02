@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import NumberTime from "./NumberTime";
-import date from "../mocks/date.json";
+import config from "../mocks/config.json";
 
 export const TimeRealize = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -24,7 +24,7 @@ export const TimeRealize = () => {
   }, []);
 
   function calculateTimeLeft() {
-    const difference = new Date(date[0].date) - new Date();
+    const difference = new Date(config.wedding.date) - new Date();
     if (difference <= 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
@@ -39,22 +39,22 @@ export const TimeRealize = () => {
   return (
     <div className="container_time_realize flex_column box">
       <div className="title_time">
-        <h2>¡Te esperamos!</h2>
+        <h2>{config.texts.countdown.title}</h2>
       </div>
       <div className="container_circle_time flex_column">
         <div className="container_card_time flex_row">
           {!finalTime ? (
             <>
-              <NumberTime value={timeLeft.days} text={date[1].days} />
+              <NumberTime value={timeLeft.days} text={config.wedding.countdown.days} />
               <hr aria-orientation="vertical" className="hr_vertical_line" />
-              <NumberTime value={timeLeft.hours} text={date[1].hours} />
+              <NumberTime value={timeLeft.hours} text={config.wedding.countdown.hours} />
               <hr aria-orientation="vertical" className="hr_vertical_line" />
-              <NumberTime value={timeLeft.minutes} text={date[1].minutes} />
+              <NumberTime value={timeLeft.minutes} text={config.wedding.countdown.minutes} />
               <hr aria-orientation="vertical" className="hr_vertical_line" />
-              <NumberTime value={timeLeft.seconds} text={date[1].seconds} />
+              <NumberTime value={timeLeft.seconds} text={config.wedding.countdown.seconds} />
             </>
           ) : (
-            <h2>Gracias por acompañarnos</h2>
+            <h2>{config.texts.countdown.ended}</h2>
           )}
         </div>
         <div className="oliva_contador_redondo_timerealize">

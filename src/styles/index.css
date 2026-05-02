@@ -3,22 +3,21 @@
 :root {
   --primary-color: #445a18;
   --secondary-color: #203500;
-  --third-color: #1e3d2e;
   --bg-opacity: #25463679;
   --pale-cream: #f5f5f5;
 
   --bg-opacity-music: #2546363a;
-  --text-primary: #203500;
-  --text-btn-color: #ffffff;
 
-  --bg-guest: #ddebc2;
+  --btn-color: #BA9972;
+  --hover-btn-color: #c9a96e;
 
   --gold: #c9a96e;
   --gold-light: #e8d5a3;
 
   /* text colors */
-  --text-on-light: #9B774C;  /* text sobre fondos claros / sin fondo */
-  --text-on-dark: #ffffff;   /* text sobre fondos oscuros / botones / banners */
+  --text-on-light: #9B774C;  
+  --text-on-light-secondary: #6C6C6C;
+  --text-on-dark: #ffffff;   
 
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
@@ -207,6 +206,7 @@ h3 {
   font-size: 1.4em;
   font-weight: bolder;
   background-color: var(--pale-cream);
+  color: var(--text-on-light-secondary);
   padding: 0.3em;
 }
 
@@ -245,6 +245,7 @@ h3 {
   width: 70%;
   max-width: 800px;
   font-size: 1.2em;
+  color: var(--text-on-light-secondary);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -275,7 +276,7 @@ h3 {
   width: 100%;
   max-width: 18em;
   height: 10em;
-  background-color: var(--text-btn-color);
+  background-color: var(--text-on-dark);
   box-shadow: 0px 0px 20px -6px var(--secondary-color);
   border-radius: 0.4em;
   margin: 1.5em;
@@ -309,7 +310,7 @@ h3 {
 
 .text_cinta {
   width: 100%;
-  background-color: var(--text-btn-color);
+  background-color: var(--text-on-dark);
   color: var(--text-on-light);
   border: 1px solid var(--gold);
   font-weight: lighter;
@@ -566,7 +567,7 @@ h3 {
   /* row */
   margin: 1.3em auto;
   border: 1px solid var(--gold);
-  background-color: var(--primary-color);
+  background-color: var(--btn-color);
   padding: 0.5em 5em;
   border-radius: 0.6em;
   gap: 1em;
@@ -580,18 +581,18 @@ h3 {
   }
 
   &:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--hover-btn-color);
     border-color: var(--gold-light);
     /* transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3); */
   }
 
   &:active {
-    background-color: var(--primary-color);
+    background-color: var(--btn-color);
     /* transform: translateY(0);
     box-shadow: none; */
   }
-
+  
   .map_icon {
     width: 2.1em;
   }
@@ -915,7 +916,7 @@ h3 {
 .container_btn_confirm {
   max-width: 1200px;
   border: 1px solid var(--gold);
-  background-color: var(--primary-color);
+  background-color: var(--btn-color);
   padding: 0.5em 5em;
   border-radius: 0.6em;
   gap: 1em;
@@ -923,14 +924,14 @@ h3 {
   transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--hover-btn-color);
     border-color: var(--gold-light);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
   }
 
   &:active {
-    background-color: var(--primary-color);
+    background-color: var(--btn-color);
     transform: translateY(0);
     box-shadow: none;
   }

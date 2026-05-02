@@ -37,19 +37,6 @@ const CardPlaces = ({ info }) => {
               <div className="text_map_card">Ver mapa</div>
             </button>
           </a>
-          {/* <div className="section_info_places">
-            <p>Si llevas tu vehículo </p>
-          </div> */}
-          {/* <Link
-            to={`https://www.google.com/maps/dir/?api=1&destination=${info.parkinglot.info}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleClick}
-          >
-            <button className="btn_card_places flex_row">
-              <div className="text_map_card">Parqueadero</div>
-            </button>
-          </Link> */}
         </div>
       </div>
     </div>

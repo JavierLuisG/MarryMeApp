@@ -29,6 +29,7 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path={`${routes.home}`} element={<Home />} />
         <Route path={`${routes.home}/:name`} element={<Home />} />
         <Route path={`${routes.notFound}`} element={<NotFound />} />
       </Routes>

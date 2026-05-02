@@ -1,17 +1,10 @@
-import { Link } from "react-router-dom";
 import infoPlaces from "../mocks/info.json";
-import { useState } from "react";
 
 const CardPlaces = ({ info }) => {
-  const [destino, setDestino] = useState("");
   const ceremonia = "4.671275695145204, -74.06657677193387";
   const recepcion = "4.715041171152234, -74.05303419309324";
-  
-  const handleClick = () => {
-    const selectedDestination =
-      info.title === infoPlaces[0].title ? ceremonia : recepcion;
-    setDestino(selectedDestination);
-  };
+  const destino = info.title === infoPlaces[0].title ? ceremonia : recepcion;
+  const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${destino}`;
 
   return (
     <div className="container_card_places flex_column">
@@ -40,16 +33,15 @@ const CardPlaces = ({ info }) => {
             <p className="info_places_title">{info.address.title}</p>
             <p>{info.address.info}</p>
           </div>
-          <Link
-            to={`https://www.google.com/maps/dir/?api=1&destination=${destino}`}
+          <a
+            href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={handleClick}
           >
             <button className="btn_card_places flex_row">
               <div className="text_map_card">Ver mapa</div>
             </button>
-          </Link>
+          </a>
           {/* <div className="section_info_places">
             <p>Si llevas tu vehículo </p>
           </div> */}

@@ -30,6 +30,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  background-color: #eae6e0;
+}
+
 button,
 input,
 select,
@@ -91,6 +96,9 @@ h3 {
 .container_bottom {
   /* box */
   padding: 0;
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .container_home {
@@ -181,7 +189,7 @@ h3 {
   position: relative;
   top: 2em;
   z-index: 2;
-  width: 800px;
+  width: 100%;
   margin: auto;
 }
 
@@ -457,9 +465,11 @@ h3 {
 /* =========================== PLACES Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_places {
-  /* row box */
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* column box */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
   text-align: left;
   position: relative;
 }
@@ -557,6 +567,7 @@ h3 {
   border-radius: 0.6em;
   gap: 1em;
   cursor: pointer;
+  /* transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; */
 
   .text_map_card {
     color: var(--gold-light);
@@ -567,10 +578,14 @@ h3 {
   &:hover {
     background-color: var(--secondary-color);
     border-color: var(--gold-light);
+    /* transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3); */
   }
 
   &:active {
     background-color: var(--primary-color);
+    /* transform: translateY(0);
+    box-shadow: none; */
   }
 
   .map_icon {
@@ -622,7 +637,7 @@ h3 {
 
 .img_onda_delgada3 {
   position: absolute;
-  bottom: 3em;
+  bottom: calc(-1em - 27em);
   right: 10px;
 
   & img {
@@ -632,8 +647,8 @@ h3 {
 
 .img_onda_delgada4 {
   position: absolute;
-  bottom: 2em;
-  transform: rotate(180deg) scaleX(-1);
+  bottom: calc(-2em - 27.7em);
+  transform: rotate(180deg) scaleX(1);
   right: 10px;
 
   & img {
@@ -730,7 +745,12 @@ h3 {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
 
-  scrollbar-width: thin;
+  scrollbar-width: none;
+
+  &:hover,
+  &:focus-within {
+    scrollbar-width: thin;
+  }
 }
 
 .item_img {
@@ -883,7 +903,8 @@ h3 {
 }
 
 .container_btns {
-  gap: 3em;
+  flex-direction: column;
+  gap: 1em;
   margin-top: 1em;
 }
 
@@ -895,14 +916,19 @@ h3 {
   border-radius: 0.6em;
   gap: 1em;
   cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     background-color: var(--secondary-color);
     border-color: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
   }
 
   &:active {
     background-color: var(--primary-color);
+    transform: translateY(0);
+    box-shadow: none;
   }
 
   .text_btn_confirm {
@@ -948,14 +974,18 @@ h3 {
 }
 
 .body_container {
-  justify-content: space-evenly;
-  padding: 3em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 2em 1.5em;
   width: 100%;
 }
 
 .info_container {
+  flex-direction: column;
   font-size: 1em;
-  gap: 2em;
+  gap: 1em;
 }
 
 .text_info {
@@ -1046,19 +1076,22 @@ width: 100%;
 /* ---------------------------------------------------------------------- */
 /* ======================= @MEDIAS QUERIES Section ====================== */
 /* ---------------------------------------------------------------------- */
-@media (max-width: 780px) {
+@media (min-width: 780px) {
   .container_btns {
-    flex-direction: column;
-    gap: 1em;
+    flex-direction: row;
+    gap: 3em;
   }
 
   .body_container {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3em;
   }
 
   .info_container {
-    flex-direction: column;
-    gap: 1em;
+    flex-direction: row;
+    gap: 2em;
   }
 }
 
@@ -1113,19 +1146,9 @@ width: 100%;
   }
 }
 
-@media (max-width: 1200px) {
-  .container_places {
-    /* row box */
-    flex-direction: column;
-    gap: 5em;
-  }
-
-  .img_onda_delgada3 {
-    bottom: calc(-1em - 27em);
-  }
-
-  .img_onda_delgada4 {
-    bottom: calc(-2em - 27.7em);
-    transform: rotate(180deg) scaleX(1);
+@media (min-width: 781px) {
+  .container_bottom {
+    border: 1px solid var(--gold-light);
+    box-shadow: 0 0 48px rgba(201, 169, 110, 0.14);
   }
 }

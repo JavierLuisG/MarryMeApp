@@ -86,10 +86,13 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & p {
+    color: var(--text-on-light-secondary);
+  }
 }
 
 .title {
-  /* column */
   gap: 0.5em;
 }
 
@@ -130,19 +133,16 @@ h3 {
   0% {
     background-color: var(--bg-opacity);
     border: 1px solid var(--bg-opacity-music);
-    /* box-shadow: 0 0 5px rgba(37, 70, 54, 0.2); */
   }
 
   50% {
     background-color: var(--bg-opacity-music);
     border: 1px solid var(--bg-opacity-music);
-    /* box-shadow: 0 0 35px rgba(37, 70, 54, 0.5); */
   }
 
   100% {
     background-color: var(--bg-opacity);
     border: 1px solid var(--bg-opacity-music);
-    /* box-shadow: 0 0 5px rgba(37, 70, 54, 0.2); */
   }
 }
 
@@ -176,7 +176,6 @@ h3 {
 /* ============================ HEAD Section ============================ */
 /* ---------------------------------------------------------------------- */
 .container_head {
-  /* row box */
   padding: 1em 0em 4em 0em;
   position: relative;
 }
@@ -371,14 +370,16 @@ h3 {
 }
 
 .container_card_time {
-  /* row */
-  width: 15em;
-  height: 15em;
-  gap: 0.5em;
-  border-radius: 50%;
+  gap: 0.4em;
   position: absolute;
   z-index: 3;
-  left: 9em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.numbers_row {
+  gap: 0.5em;
 }
 
 .oliva_contador_redondo_timerealize {
@@ -393,15 +394,19 @@ h3 {
     position: absolute;
     top: -2em;
     left: 0em;
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     object-fit: contain;
   }
 }
 
+.heart_countdown {
+  width: 2em;
+  margin-top: 0.5em;
+}
+
 .card_date {
 
-  /* column */
   .number_date {
     font-size: 2em;
     font-weight: bolder;
@@ -409,7 +414,7 @@ h3 {
   }
 
   .text_date {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bolder;
     color: var(--text-on-light-secondary);
   }
@@ -417,11 +422,12 @@ h3 {
 
 .hr_vertical_line {
   width: 1px;
-  height: 3em;
-  margin: 1em 0em;
+  height: 2em;
+  margin: 0;
   border: none;
   background-color: var(--gold);
   opacity: 0.6;
+  flex-shrink: 0;
 }
 
 .img_onda_desc_time_realize {
@@ -455,7 +461,6 @@ h3 {
 /* =========================== PLACES Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_places {
-  /* column box */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -465,20 +470,15 @@ h3 {
 }
 
 .container_card_places {
-  /* column */
   gap: 1em;
   position: relative;
   min-width: 21em;
   background: rgba(245, 245, 245, 0.55);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  /* border: 1px solid var(--gold); */
-  /* border-radius: 0.8em; */
-  /* box-shadow: 0 4px 24px rgba(32, 53, 0, 0.10); */
   overflow: hidden;
 
   .content_info_places {
-    /* row */
     gap: 1em;
 
     .img_places {
@@ -491,7 +491,6 @@ h3 {
   }
 
   .info_places {
-    /* column */
     align-items: start;
     gap: 1.3em;
 
@@ -551,7 +550,6 @@ h3 {
 }
 
 .btn_card_places {
-  /* row */
   margin: 1.3em auto;
   border: 1px solid var(--gold);
   background-color: var(--btn-color);
@@ -657,6 +655,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_section_detail {
   position: relative;
+  bottom: 2em;
 
   p {
     font-size: 1.2em;
@@ -891,6 +890,7 @@ h3 {
   padding-bottom: 4em !important;
   
   span {
+    color: var(--text-on-light-secondary);
     font-size: 1.2em;
   }
 }
@@ -1105,7 +1105,6 @@ width: 100%;
     }
   }
 
-  
   .img_hortensia_places {
     top: calc(3.5em + -3em);
     

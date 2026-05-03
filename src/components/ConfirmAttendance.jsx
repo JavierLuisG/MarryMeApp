@@ -34,7 +34,6 @@ const ConfirmAttendance = () => {
             <div className="text_btn_confirm">{config.couple.wife.name}</div>
           </a>
         </div>
-        <p className="text_confirm_hint">{config.texts.confirmAttendance.hint}</p>
       </section>
     </div>
   );

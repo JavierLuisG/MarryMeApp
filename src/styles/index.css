@@ -627,22 +627,22 @@ h3 {
 
 .img_onda_delgada3 {
   position: absolute;
-  bottom: calc(-1em - 27em);
-  right: 10px;
+  bottom: calc(-1.4em - 27em);
+  width: 100%;
 
   & img {
-    width: 98vw;
+    width: 100%;
   }
 }
 
 .img_onda_delgada4 {
   position: absolute;
-  bottom: calc(-2em - 27.7em);
+  bottom: calc(-1.2em - 27.7em);
   transform: rotate(180deg) scaleX(1);
-  right: 10px;
-
+  width: 100%;
+  
   & img {
-    width: 98vw;
+    width: 100%;
   }
 }
 

@@ -726,7 +726,7 @@ h3 {
   height: 80%;
   margin: 1em 0em;
   border: none;
-  background-color: var(--gold);
+  background-color: var(--text-on-light);
   position: absolute;
   left: calc(50% - 1px);
 }

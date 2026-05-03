@@ -902,7 +902,8 @@ h3 {
 }
 
 .container_btn_confirm {
-  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
   border: 1px solid var(--gold);
   background-color: var(--btn-color);
   padding: 0.5em 5em;
@@ -1013,6 +1014,7 @@ h3 {
 .arreglo_container {
   position: relative;
   width: 100%;
+  padding: 2em 0em;
 }
 
 .rama_arreglo {
@@ -1071,8 +1073,8 @@ width: 100%;
 /* ---------------------------------------------------------------------- */
 @media (min-width: 780px) {
   .container_btns {
-    flex-direction: row;
-    gap: 3em;
+    flex-direction: column;
+    gap: 1em;
   }
 
   .body_container {

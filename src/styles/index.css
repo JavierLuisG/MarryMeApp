@@ -8,7 +8,7 @@
 
   --bg-opacity-music: #BA99729b;
 
-  --btn-color: #BA9972;
+  --btn-color: #9B774C;
   --hover-btn-color: #c9a96e;
 
   --gold: #c9a96e;
@@ -549,6 +549,21 @@ h3 {
   }
 }
 
+@keyframes btn-wave {
+  0% {
+    left: -65%;
+    opacity: 1;
+  }
+  30% {
+    left: 120%;
+    opacity: 1;
+  }
+  31%, 100% {
+    left: -65%;
+    opacity: 0;
+  }
+}
+
 .btn_card_places {
   margin: 1.3em auto;
   border: 1px solid var(--gold);
@@ -557,7 +572,27 @@ h3 {
   border-radius: 0.6em;
   gap: 1em;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -65%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(213, 199, 174, 0.45) 50%,
+      transparent 100%
+    );
+    transform: skewX(-18deg);
+    animation: btn-wave 6s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0;
+  }
 
   .text_map_card {
     color: var(--text-on-dark);
@@ -565,19 +600,12 @@ h3 {
     padding-right: 0.5em;
   }
 
-  &:hover {
-    background-color: var(--hover-btn-color);
-    border-color: var(--gold-light);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
-  }
-
   &:active {
     background-color: var(--btn-color);
     transform: translateY(0);
     box-shadow: none;
   }
-  
+
   .map_icon {
     width: 2.1em;
   }
@@ -911,13 +939,30 @@ h3 {
   border-radius: 0.6em;
   gap: 1em;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
 
-  &:hover {
-    background-color: var(--hover-btn-color);
-    border-color: var(--gold-light);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -65%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(213, 199, 174, 0.45) 50%,
+      transparent 100%
+    );
+    transform: skewX(-18deg);
+    animation: btn-wave 6s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &:nth-child(2)::after {
+    animation-delay: 2s;
   }
 
   &:active {

@@ -32,23 +32,27 @@ export const TimeRealize = () => {
         <h2>{config.texts.countdown.title}</h2>
       </div>
       <div className="container_circle_time flex_column">
-        <div className="container_card_time flex_row">
-          {timeLeft !== null ? (
-            <>
-              <NumberTime value={timeLeft.days} text={config.wedding.countdown.days} />
-              <hr aria-orientation="vertical" className="hr_vertical_line" />
-              <NumberTime value={timeLeft.hours} text={config.wedding.countdown.hours} />
-              <hr aria-orientation="vertical" className="hr_vertical_line" />
-              <NumberTime value={timeLeft.minutes} text={config.wedding.countdown.minutes} />
-              <hr aria-orientation="vertical" className="hr_vertical_line" />
-              <NumberTime value={timeLeft.seconds} text={config.wedding.countdown.seconds} />
-            </>
-          ) : (
-            <h2>{config.texts.countdown.ended}</h2>
-          )}
+        <div className="container_card_time flex_column">
+          <div className="numbers_row flex_row">
+            {timeLeft !== null ? (
+              <>
+                <NumberTime value={timeLeft.days} text={config.wedding.countdown.days} />
+                <hr aria-orientation="vertical" className="hr_vertical_line" />
+                <NumberTime value={timeLeft.hours} text={config.wedding.countdown.hours} />
+                <hr aria-orientation="vertical" className="hr_vertical_line" />
+                <NumberTime value={timeLeft.minutes} text={config.wedding.countdown.minutes} />
+                <hr aria-orientation="vertical" className="hr_vertical_line" />
+                <NumberTime value={timeLeft.seconds} text={config.wedding.countdown.seconds} />
+              </>
+            ) : (
+              <h2>{config.texts.countdown.ended}</h2>
+            )}
+          </div>
+          <img src="/heart.svg" alt="" className="heart_countdown" />
         </div>
         <div className="oliva_contador_redondo_timerealize">
-          <img src="/images/oliva_contador_redondo.png" loading="lazy" alt="" />
+          <img src="/images/img_circuloContador.png" loading="lazy" alt="" />
+          <img src="/images/flores_contador.png" loading="lazy" alt="" className="flores_contador_overlay" />
         </div>
         <div className="img_onda_desc_timerealize">
           <img src="/img_onda_desc.svg" loading="lazy" alt="" />

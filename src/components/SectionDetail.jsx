@@ -24,16 +24,6 @@ const SectionDetail = () => {
         </div>
       </div>
       <div className="flex_column">
-        <p style={{ width: "80%", maxWidth: "600px", textAlign: "center" }}>
-          Hemos reservado para nosotros los colores{" "}
-          {config.dresscode.reservedColors.map((color, i) => (
-            <React.Fragment key={color}>
-              <b>{color}</b>{i < config.dresscode.reservedColors.length - 1 ? " y " : ""}
-            </React.Fragment>
-          ))}{" "}en esta ocasión.
-        </p>
-      </div>
-      <div className="flex_column">
         <p style={{ width: "100%", textAlign: "center" }}>
           {config.dresscode.message}
           <br />

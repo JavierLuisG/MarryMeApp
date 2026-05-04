@@ -1059,7 +1059,6 @@ width: 100%;
   70%      { transform: scale(1); }
 }
 
-/* Full-screen overlay */
 .envelope-scene {
   position: fixed;
   inset: 0;
@@ -1083,7 +1082,6 @@ width: 100%;
   pointer-events: none;
 }
 
-/* Envelope wrapper — same constraints as .container_bottom */
 .envelope-container {
   position: relative;
   width: 100%;
@@ -1099,7 +1097,6 @@ width: 100%;
   background: #ffffff;
 }
 
-/* ---- Flap group: triangle + wax seal (moves UP) ---- */
 .envelope-flap-group {
   position: relative;
   width: 100%;
@@ -1107,6 +1104,7 @@ width: 100%;
   z-index: 2;
   transition: transform 820ms ease-in-out, opacity 720ms ease-in-out;
   transform-origin: top center;
+  border-bottom: 2px solid var(--bg-opacity-music);
 }
 
 .flap-group--open {
@@ -1114,19 +1112,17 @@ width: 100%;
   opacity: 0;
 }
 
-/* Triangle pointing downward — the envelope flap */
-/* em-based height so it scales with the container's clamp font-size */
 .envelope-flap-top {
+  position: relative;
+  z-index: 3;
   width: 100%;
-  height: 100%;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  height: 105%;
   background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Wax seal — centred at the triangle tip, overlaps the body */
 .envelope-seal {
   position: absolute;
   bottom: -2.5em;
@@ -1140,7 +1136,6 @@ width: 100%;
   filter: drop-shadow(0 2px 10px rgba(155, 119, 76, 0.45));
 }
 
-/* ---- Envelope body: names + tagline (moves DOWN) ---- */
 .envelope-body {
   position: relative;
   width: 100%;
@@ -1149,6 +1144,7 @@ width: 100%;
   padding-top: 3em;
   border-top: none;
   transition: transform 820ms ease-in-out 120ms, opacity 820ms ease-in-out 120ms;
+  border-top: 2px solid var(--bg-opacity-music);
 }
 
 .envelope-body--open {
@@ -1171,13 +1167,11 @@ width: 100%;
   color: var(--text-on-light-secondary);
 }
 
-/* Uses h2 default (Great Vibes, 2.5em) — only layout overrides here */
 .env-names {
   line-height: 1.1;
   margin: 0.05em 0;
 }
 
-/* ---- Hint text below the envelope ---- */
 .envelope-hint {
   display: flex;
   flex-direction: column;
@@ -1212,7 +1206,7 @@ width: 100%;
 }
 
 :is(.envelope-container, .envelope-hint) {
-  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
+  font-size: clamp(1rem, 1vw + 1rem, 7rem);
 }
 
 /* ---------------------------------------------------------------------- */

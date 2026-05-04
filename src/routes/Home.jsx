@@ -10,10 +10,12 @@ import ConfirmAttendance from "../components/ConfirmAttendance";
 import BgMusic from "../components/BgMusic";
 import Footer from "../components/Footer";
 import Arreglo from "../components/Arreglo";
+import EnvelopeIntro from "../components/EnvelopeIntro";
 
 export const Home = () => {
   return (
     <div className="container_bottom box">
+      <EnvelopeIntro />
       <BgMusic src={"/audio/EdSheeran-Perfect.mp3"} volume={0.5} />
       <div className="container_home flex_column">
         <GuestPresentation />

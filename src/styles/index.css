@@ -256,14 +256,6 @@ h3 {
   position: relative;
 }
 
-.fondo_pareja {
-  position: fixed;
-  top: 0;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .card_presentation {
   min-width: 20em;
   position: relative;
@@ -292,11 +284,6 @@ h3 {
   background: rgba(245, 245, 245, 0.55);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-}
-
-.text_guest {
-  max-width: 30em;
-  padding: 0 2em;
 }
 
 .cinta_guest {
@@ -352,7 +339,7 @@ h3 {
   bottom: 0;
 }
 
-:is(.card_presentation, .container_guest, .container_position_guest, .text_guest) {
+:is(.card_presentation, .container_guest, .container_position_guest) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -430,18 +417,6 @@ h3 {
   flex-shrink: 0;
 }
 
-.img_onda_desc_time_realize {
-  position: absolute;
-  z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & img {
-    width: 98vw;
-  }
-}
-
 .img_onda_desc_timerealize {
   position: absolute;
   z-index: -1;
@@ -453,7 +428,7 @@ h3 {
 }
 
 :is(.container_time_realize, .container_card_time, .hr_vertical_line,
-  .text_date, .number_date, .hr_vertical_line, .img_aros_contador) {
+  .text_date, .number_date, .hr_vertical_line) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -606,9 +581,6 @@ h3 {
     box-shadow: none;
   }
 
-  .map_icon {
-    width: 2.1em;
-  }
 }
 
 .container_flor_ramas_places {
@@ -981,14 +953,6 @@ h3 {
   width: 1.4em;
 }
 
-.text_confirm_hint {
-  margin-top: 0.8em;
-  font-size: 0.9em;
-  color: var(--text-on-light);
-  opacity: 0.75;
-  text-align: center;
-}
-
 :is(.container_confirm, .container_btn_confirm, .text_btn_confirm) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
@@ -1029,21 +993,6 @@ h3 {
   letter-spacing: 0.05em;
   width: 100%;
   text-align: center;
-}
-
-.networks_contact {
-  gap: 0.7em;
-}
-
-.img {
-  width: 1.2em;
-  opacity: 0.75;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.img:hover {
-  transform: scale(1.15);
-  opacity: 1;
 }
 
 :is(.container_footer) {
@@ -1095,6 +1044,174 @@ width: 100%;
 }
 
 :is(.arreglo_container) {
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
+}
+
+/* ---------------------------------------------------------------------- */
+/* =================== ENVELOPE INTRO Section ========================== */
+/* ---------------------------------------------------------------------- */
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%      { transform: scale(1.28); }
+  28%      { transform: scale(1); }
+  42%      { transform: scale(1.12); }
+  70%      { transform: scale(1); }
+}
+
+/* Full-screen overlay */
+.envelope-scene {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #f2ede5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  transition: opacity 400ms ease-in-out 820ms;
+}
+
+.envelope-scene--opening {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Envelope wrapper — same constraints as .container_bottom */
+.envelope-container {
+  position: relative;
+  width: 100%;
+  max-width: 780px;
+  height: 100dvh;
+  flex: 1;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter: drop-shadow(0 10px 36px rgba(155, 119, 76, 0.24));
+  background: #ffffff;
+}
+
+/* ---- Flap group: triangle + wax seal (moves UP) ---- */
+.envelope-flap-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: transform 820ms ease-in-out, opacity 720ms ease-in-out;
+  transform-origin: top center;
+}
+
+.flap-group--open {
+  transform: translateY(-210%);
+  opacity: 0;
+}
+
+/* Triangle pointing downward — the envelope flap */
+/* em-based height so it scales with the container's clamp font-size */
+.envelope-flap-top {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wax seal — centred at the triangle tip, overlaps the body */
+.envelope-seal {
+  position: absolute;
+  bottom: -2.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5em;
+  height: 5em;
+  object-fit: contain;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 10px rgba(155, 119, 76, 0.45));
+}
+
+/* ---- Envelope body: names + tagline (moves DOWN) ---- */
+.envelope-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 3em;
+  border-top: none;
+  transition: transform 820ms ease-in-out 120ms, opacity 820ms ease-in-out 120ms;
+}
+
+.envelope-body--open {
+  transform: translateY(210%);
+  opacity: 0;
+}
+
+.envelope-body-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 2.6em 1.5em 2em;
+}
+
+.env-pre-names {
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--text-on-light-secondary);
+}
+
+/* Uses h2 default (Great Vibes, 2.5em) — only layout overrides here */
+.env-names {
+  line-height: 1.1;
+  margin: 0.05em 0;
+}
+
+/* ---- Hint text below the envelope ---- */
+.envelope-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45em;
+  text-align: center;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1em;
+  transition: opacity 380ms ease-in-out;
+}
+
+.envelope-hint--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.env-hint-line1 {
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--text-on-light-secondary);
+}
+
+.env-hint-line2 {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--text-on-light);
+  letter-spacing: 0.04em;
+  display: inline-block;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+:is(.envelope-container, .envelope-hint) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 

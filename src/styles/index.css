@@ -154,11 +154,11 @@ h3 {
   cursor: pointer;
 
   border-radius: 50%;
-  width: 4em;
-  height: 4em;
+  width: 2.7em;
+  height: 2.7em;
 
   img {
-    width: 2em;
+    width: 1.5em;
   }
 }
 

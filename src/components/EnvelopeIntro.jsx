@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const EnvelopeIntro = () => {
+const EnvelopeIntro = ({ onDone }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
 
@@ -14,6 +14,7 @@ const EnvelopeIntro = () => {
     setTimeout(() => {
       setIsHidden(true);
       document.body.style.overflow = "";
+      onDone?.();
     }, 2200);
   };
 

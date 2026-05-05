@@ -1,20 +1,46 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
-const BgMusic = ({ src, volume = 1 }) => {
+const BgMusic = ({ src, volume = 1, autoPlay = false }) => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const togglePlayPause = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
+  // Auto-play when envelope animation ends
+  useEffect(() => {
+    if (!autoPlay) return;
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.volume = volume;
+    audio.loop = true;
+    audio.play().catch(() => {});
+    setIsPlaying(true);
+  }, [autoPlay]);
+
+  // Pause when tab is hidden, resume when tab is visible (only if user had it playing)
+  useEffect(() => {
+    const handleVisibility = () => {
+      const audio = audioRef.current;
+      if (!audio) return;
+      if (document.hidden) {
+        if (!audio.paused) audio.pause();
       } else {
-        audioRef.current.volume = volume;
-        audioRef.current.loop = true;
-        audioRef.current.play();
+        if (isPlaying) audio.play().catch(() => {});
       }
-      setIsPlaying(!isPlaying);
+    };
+    document.addEventListener("visibilitychange", handleVisibility);
+    return () => document.removeEventListener("visibilitychange", handleVisibility);
+  }, [isPlaying]);
+
+  const togglePlayPause = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.volume = volume;
+      audio.loop = true;
+      audio.play().catch(() => {});
     }
+    setIsPlaying(!isPlaying);
   };
 
   return (

@@ -39,7 +39,7 @@ const EnvelopeIntro = () => {
           className={`envelope-flap-group${isOpen ? " flap-group--open" : ""}`}
         >
           <div className="envelope-flap-top">
-            <h2 className="env-names">Brayan &amp; Natalia</h2>
+            <h3 className="env-names">Brayan &amp; Natalia</h3>
           </div>
 
           <img

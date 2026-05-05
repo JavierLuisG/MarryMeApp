@@ -14,7 +14,7 @@ const EnvelopeIntro = () => {
     setTimeout(() => {
       setIsHidden(true);
       document.body.style.overflow = "";
-    }, 1350);
+    }, 2200);
   };
 
   const handleKeyDown = (e) => {

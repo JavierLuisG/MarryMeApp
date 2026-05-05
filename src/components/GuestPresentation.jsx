@@ -8,9 +8,6 @@ const GuestPresentation = () => {
   return (
     <div className="container_guest title flex_column box">
       <div className="card_presentation flex_column">
-        <div className="img_oliva_grupo_ramas_guest">
-          <img src="/images/oliva_grupo_ramas.webp" alt="" />
-        </div>
         <div className="container_position_guest flex_column">
           <div className="flex_column container_name">
             <h2>{name}</h2>

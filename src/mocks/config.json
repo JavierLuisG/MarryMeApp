@@ -52,7 +52,7 @@
   },
   "texts": {
     "guestPresentation": {
-      "announcement": "¡Nos casamos!",
+      "announcement": "Invitado",
       "guestFallback": "Estimado invitado"
     },
     "head": {

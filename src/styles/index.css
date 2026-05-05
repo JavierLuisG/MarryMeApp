@@ -575,44 +575,9 @@ h3 {
 
 .container_flor_ramas_places {
   position: absolute;
-  top: 0em;
+  top: 8.5em;
   width: 100%;
   z-index: 3;
-}
-
-.img_rama_hortensia_places {
-  position: absolute;
-  top: 1em;
-  z-index: 1;
-  left: -2em;
-  transform: rotate(-40deg);
-
-  & img {
-    width: 14em;
-  }
-}
-
-.img_rama_hortensia_2_places {
-  position: absolute;
-  top: -2em;
-  z-index: 1;
-  left: -2em;
-  transform: rotate(40deg) scaleY(-1);
-
-  & img {
-    width: 14em;
-  }
-}
-
-.img_hortensia_places {
-  position: relative;
-  top: -1em;
-  right: 2em;
-  z-index: 2;
-
-  & img {
-    width: 9em;
-  }
 }
 
 .img_ondas_delgadas {
@@ -630,9 +595,6 @@ h3 {
   .container_places,
   .container_card_places,
   .btn_card_places,
-  .img_hortensia_places,
-  .img_rama_hortensia_places,
-  .img_rama_hortensia_2_places,
   .img_ondas_delgadas
 ) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
@@ -1243,29 +1205,6 @@ h3 {
 }
 
 @media (max-width: 730px) {
-  .img_rama_hortensia_places {
-    top: calc(5.5em + -3em);
-
-    & img {
-      width: 11em;
-    }
-  }
-
-  .img_rama_hortensia_2_places {
-    top: calc(2.5em + -3em);
-
-    & img {
-      width: 11em;
-    }
-  }
-
-  .img_hortensia_places {
-    top: calc(3.5em + -3em);
-
-    & img {
-      width: 7em;
-    }
-  }
 
   .img_rama_hortensia_gifts {
     top: calc(5.5em + 1.4em);

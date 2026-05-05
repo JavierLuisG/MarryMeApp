@@ -20,7 +20,7 @@ export const Home = () => {
       <EnvelopeIntro onDone={() => setEnvelopeDone(true)} />
       <BgMusic src={"/audio/EdSheeran-Perfect.mp3"} volume={0.5} autoPlay={envelopeDone} />
       <div className="container_home flex_column">
-        <GuestPresentation />
+        {/* <GuestPresentation /> */}
         <Head />
         <Arreglo />
         <OurLove />

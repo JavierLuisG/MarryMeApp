@@ -12,7 +12,7 @@ const Head = () => {
               aria-orientation="horizontal"
               className="hr_line line_position"
             />
-            <span className="date">{config.wedding.displayDate}</span>
+            <span className="date">¡Nos casamos!</span>
           </div>
           <h1 className="names_couple flex_row">
             <span>

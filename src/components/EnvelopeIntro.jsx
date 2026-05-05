@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import config from "../mocks/config.json";
 
 const EnvelopeIntro = ({ onDone }) => {
+  const params = useParams();
+  const name = params.name || config.texts.guestPresentation.guestFallback;
+
   const [isOpen, setIsOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
 
@@ -40,18 +45,14 @@ const EnvelopeIntro = ({ onDone }) => {
           className={`envelope-flap-group${isOpen ? " flap-group--open" : ""}`}
         >
           <div className="envelope-flap-top">
-            <h3 className="env-names">
-              Brayan <br /> &amp; <br /> Natalia
-            </h3>
+            <h3 className="env-names">{name}</h3>
           </div>
-
           <img
             className="envelope-seal"
             src="/images/adornos/stamp.png"
             alt="sello de lacre"
           />
         </div>
-
         <div className={`envelope-body${isOpen ? " envelope-body--open" : ""}`}>
           <div className="envelope-body-inner">
             <p className="env-pre-names">Con gran alegría</p>

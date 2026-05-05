@@ -48,7 +48,8 @@
     "noKids": "niños dulces sueños."
   },
   "gifts": {
-    "message": "Tu compañía es nuestro mejor regalo. Si deseas tener un detalle especial, habrá lluvia de sobres."
+    "title": "Regalo",
+    "message": "Nuestro mejor regalo es tu compañía, pero si deseas darnos un obsequio, habrá lluvia de sobres."
   },
   "texts": {
     "guestPresentation": {
@@ -64,18 +65,18 @@
     },
     "ourLove": {
       "photos": [
-        "/images/1.jpg",
-        "/images/2.jpg",
-        "/images/3.jpg",
-        "/images/4.jpg",
-        "/images/5.jpg"
+        "/images/pareja/1.jpg",
+        "/images/pareja/2.jpg",
+        "/images/pareja/3.jpg",
+        "/images/pareja/4.jpg",
+        "/images/pareja/5.jpg"
       ],
       "quote": "\"Describe la intensidad y durabilidad del amor verdadero, describiéndolo como una llama divina, fuerte como la muerte y la tumba, que ni las muchas aguas pueden apagar \"",
       "quoteReference": "Cantares 8, 6-7."
     },
     "confirmAttendance": {
-      "title": "Confirmar asistencia",
-      "subtitle": "Confírmanos tu asistencia por medio de WhatsApp.",
+      "title": "¿Nos acompañas?",
+      "subtitle": "Es muy importante que nos confirmes tu asistencia.",
       "hint": "Al presionar se abrirá WhatsApp",
       "whatsappMessage": "Hola 👋, quiero confirmar mi asistencia a tu boda 💒 💍."
     }

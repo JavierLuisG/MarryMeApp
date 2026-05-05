@@ -51,8 +51,8 @@ export const TimeRealize = () => {
           <img src="/heart.svg" alt="" className="heart_countdown" />
         </div>
         <div className="oliva_contador_redondo_timerealize">
-          <img src="/images/img_circuloContador.png" loading="lazy" alt="" />
-          <img src="/images/flores_contador.png" loading="lazy" alt="" className="flores_contador_overlay" />
+          <img src="/images/circulos-adorno/img_circuloContador.png" loading="lazy" alt="" />
+          <img src="/images/flores/flores_contador.png" loading="lazy" alt="" className="flores_contador_overlay" />
         </div>
         <div className="img_onda_desc_timerealize">
           <img src="/img_onda_desc.svg" loading="lazy" alt="" />

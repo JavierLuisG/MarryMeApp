@@ -9,7 +9,7 @@ const Arreglo = () => {
       </div>
       <div className="rama_arreglo">
         <div data-aos="fade-right">
-          <img src="/images/oliva_rama_dos_par.webp" loading="lazy" alt="" />
+          <img src="/images/hojas/oliva_rama_dos_par.webp" loading="lazy" alt="" />
         </div>
       </div>
       <img

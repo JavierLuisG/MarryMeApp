@@ -27,9 +27,9 @@ export const Home = () => {
         <TimeRealize />
         <Places />
         <Arreglo />
+        <ConfirmAttendance />
         <SectionDetail />
         <Gifts />
-        <ConfirmAttendance />
         <Footer />
       </div>
     </div>

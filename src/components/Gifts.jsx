@@ -8,17 +8,18 @@ const Gifts = () => {
         <div data-aos="zoom-in-up">
           <div className="container_flor_ramas_gifts">
             <div className="img_hortensia_gifts">
-              <img src="/images/hortensia_final.png" loading="lazy" alt="" />
+              <img src="/images/flores/hortensia_final.png" loading="lazy" alt="" />
             </div>
             <div className="img_rama_hortensia_gifts">
-              <img src="/images/oliva_rama_uno_par.webp" loading="lazy" alt="" />
+              <img src="/images/hojas/oliva_rama_uno_par.webp" loading="lazy" alt="" />
             </div>
             <div className="img_rama_hortensia_2_gifts">
-              <img src="/images/oliva_rama_uno_par.webp" loading="lazy" alt="" />
+              <img src="/images/hojas/oliva_rama_uno_par.webp" loading="lazy" alt="" />
             </div>
           </div>
           <div className="container_gifts_card flex_column">
-            <img className="gifts_icon" src="/money-gift.svg" alt="" />
+            <img className="gifts_icon" src="/mano_regalo.svg" alt="" />
+            <h3 className="gifts_title">{config.gifts.title}</h3>
             <div className="gifts_content flex_row">
               <div>
                 <p>

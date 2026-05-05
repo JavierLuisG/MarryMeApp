@@ -47,7 +47,7 @@ const EnvelopeIntro = ({ onDone }) => {
 
           <img
             className="envelope-seal"
-            src="/images/stamp.png"
+            src="/images/adornos/stamp.png"
             alt="sello de lacre"
           />
         </div>

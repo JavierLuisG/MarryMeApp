@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&display=swap");
 
 :root {
   --secondary-color: #203500;
-  --bg-opacity: #BA99724d;
+  --bg-opacity: #ba99724d;
   --pale-cream: #f5f5f5;
 
-  --bg-opacity-music: #BA99729b;
+  --bg-opacity-music: #ba99729b;
 
-  --btn-color: #9B774C;
+  --btn-color: #9b774c;
   --hover-btn-color: #c9a96e;
 
   --gold: #c9a96e;
   --gold-light: #e8d5a3;
 
-  /* text colors */
-  --text-on-light: #9B774C;  
-  --text-on-light-secondary: #6C6C6C;
-  --text-on-dark: #ffffff;   
+  --text-on-light: #9b774c;
+  --text-on-light-secondary: #6c6c6c;
+  --text-on-dark: #ffffff;
 
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
 
 /* =========================== GENERAL STYLES =========================== */
@@ -99,7 +98,6 @@ h3 {
 /* ============================ HOME Section ============================ */
 /* ---------------------------------------------------------------------- */
 .container_bottom {
-  /* box */
   padding: 0;
   max-width: 780px;
   margin: 0 auto;
@@ -107,7 +105,6 @@ h3 {
 }
 
 .container_home {
-  /* column */
   background-color: var(--pale-cream);
 }
 
@@ -116,7 +113,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 @keyframes waveEffect {
   0% {
-    box-shadow: 0 0 0 0 #9B774C;
+    box-shadow: 0 0 0 0 #9b774c;
   }
 
   50% {
@@ -186,7 +183,6 @@ h3 {
 
 /* _________________________ final head --scroll _________________________ */
 .recuadro {
-  /* column */
   position: relative;
   top: 2em;
   z-index: 2;
@@ -250,7 +246,6 @@ h3 {
 /* ===================== GUEST PRESENTATION Section ===================== */
 /* ---------------------------------------------------------------------- */
 .container_guest {
-  /* column title */
   height: 100vh;
   position: relative;
 }
@@ -380,7 +375,6 @@ h3 {
 }
 
 .card_date {
-
   .number_date {
     font-size: 2em;
     font-weight: bolder;
@@ -414,8 +408,14 @@ h3 {
   }
 }
 
-:is(.container_time_realize, .container_card_time, .hr_vertical_line,
-  .text_date, .number_date, .hr_vertical_line) {
+:is(
+  .container_time_realize,
+  .container_card_time,
+  .hr_vertical_line,
+  .text_date,
+  .number_date,
+  .hr_vertical_line
+) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -470,7 +470,7 @@ h3 {
       color: var(--text-on-light-secondary);
       text-align: center;
     }
-    
+
     .info_places_title {
       color: var(--text-on-light);
       text-align: center;
@@ -487,7 +487,11 @@ h3 {
 
 .info_title {
   width: 100%;
-  background: linear-gradient(90deg, var(--text-on-light), var(--hover-btn-color));
+  background: linear-gradient(
+    90deg,
+    var(--text-on-light),
+    var(--hover-btn-color)
+  );
   color: var(--text-on-dark);
   font-weight: lighter;
   padding: 0.1em 0em;
@@ -520,7 +524,8 @@ h3 {
     left: 120%;
     opacity: 1;
   }
-  31%, 100% {
+  31%,
+  100% {
     left: -65%;
     opacity: 0;
   }
@@ -538,7 +543,7 @@ h3 {
   overflow: hidden;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -65%;
@@ -567,7 +572,6 @@ h3 {
     transform: translateY(0);
     box-shadow: none;
   }
-
 }
 
 .container_flor_ramas_places {
@@ -612,28 +616,26 @@ h3 {
   }
 }
 
-.img_onda_delgada3 {
-  position: absolute;
-  bottom: calc(-1.4em - 27em);
-  width: 100%;
-
-  & img {
-    width: 100%;
-  }
-}
-
-.img_onda_delgada4 {
+.img_ondas_delgadas {
   position: absolute;
   bottom: calc(-1.2em - 27.7em);
   transform: rotate(180deg) scaleX(1);
   width: 100%;
-  
+
   & img {
     width: 100%;
   }
 }
 
-:is(.container_places, .container_card_places, .btn_card_places, .img_hortensia_places, .img_rama_hortensia_places, .img_rama_hortensia_2_places) {
+:is(
+  .container_places,
+  .container_card_places,
+  .btn_card_places,
+  .img_hortensia_places,
+  .img_rama_hortensia_places,
+  .img_rama_hortensia_2_places,
+  .img_ondas_delgadas
+) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -759,7 +761,7 @@ h3 {
     font-family: "Great Vibes", cursive;
     color: var(--text-on-light-secondary);
   }
-  
+
   .lectura {
     color: var(--text-on-light-secondary);
     text-align: center;
@@ -876,7 +878,6 @@ h3 {
 .container_confirm {
   padding: 4em 1em !important;
 
-  
   span {
     color: var(--text-on-light-secondary);
     font-size: 1.2em;
@@ -902,7 +903,7 @@ h3 {
   overflow: hidden;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -65%;
@@ -1023,7 +1024,7 @@ h3 {
 }
 
 .onda_delgada_arreglo2 {
-width: 100%;
+  width: 100%;
   position: absolute;
   top: 1em;
   transform: rotate(180deg);
@@ -1039,11 +1040,22 @@ width: 100%;
 /* ---------------------------------------------------------------------- */
 
 @keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  14%      { transform: scale(1.28); }
-  28%      { transform: scale(1); }
-  42%      { transform: scale(1.12); }
-  70%      { transform: scale(1); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.28);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.12);
+  }
+  70% {
+    transform: scale(1);
+  }
 }
 
 .envelope-scene {
@@ -1061,7 +1073,9 @@ width: 100%;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   outline: none;
-  transition: opacity 700ms ease-in-out 1400ms, background-color 1400ms ease-in-out;
+  transition:
+    opacity 700ms ease-in-out 1400ms,
+    background-color 1400ms ease-in-out;
 }
 
 .envelope-scene--opening {
@@ -1095,7 +1109,9 @@ width: 100%;
   width: 100%;
   height: 55dvh;
   z-index: 2;
-  transition: transform 1400ms ease-in-out, opacity 1200ms ease-in-out;
+  transition:
+    transform 1400ms ease-in-out,
+    opacity 1200ms ease-in-out;
   transform-origin: top center;
   border-bottom: 2px solid var(--bg-opacity-music);
 }
@@ -1138,7 +1154,9 @@ width: 100%;
   z-index: 1;
   padding-top: 3em;
   border-top: none;
-  transition: transform 1400ms ease-in-out 200ms, opacity 1400ms ease-in-out 200ms;
+  transition:
+    transform 1400ms ease-in-out 200ms,
+    opacity 1400ms ease-in-out 200ms;
   border-top: 2px solid var(--bg-opacity-music);
 }
 
@@ -1245,7 +1263,7 @@ width: 100%;
 
   .img_hortensia_places {
     top: calc(3.5em + -3em);
-    
+
     & img {
       width: 7em;
     }

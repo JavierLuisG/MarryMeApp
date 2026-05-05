@@ -15,12 +15,9 @@ const Places = () => {
           <div className="img_rama_hortensia_2_places">
             <img src="/images/oliva_rama_uno_par.webp" loading="lazy" alt="" />
           </div>
-          <div className="img_onda_delgada3">
-            <img src="/img_onda_delgada.svg" loading="lazy" alt="" />
-          </div>
-          <div className="img_onda_delgada4">
-            <img src="/img_onda_delgada.svg" loading="lazy" alt="" />
-          </div>
+          <div className="img_ondas_delgadas">
+            <img src="/img_lineas_tres.svg" loading="lazy" alt="" />
+          </div> 
         </div>
       </div>
       {config.places.map((info, index) => (

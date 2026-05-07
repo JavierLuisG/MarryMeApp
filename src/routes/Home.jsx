@@ -18,7 +18,7 @@ export const Home = () => {
   return (
     <div className="container_bottom box">
       <EnvelopeIntro onDone={() => setEnvelopeDone(true)} />
-      <BgMusic src={"/audio/EdSheeran-Perfect.mp3"} volume={0.5} autoPlay={envelopeDone} />
+      <BgMusic src={"/audio/AndresCepeda_PorElRestoDeMiVida.mp3"} volume={0.5} autoPlay={envelopeDone} />
       <div className="container_home flex_column">
         {/* <GuestPresentation /> */}
         <Head />

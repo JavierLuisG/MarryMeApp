@@ -6,7 +6,17 @@ const Head = () => {
   return (
     <div className="container_head flex_row box">
       <div className="recuadro flex_column">
-      <div data-aos="fade-down-right">
+        <div className="img_head_container">
+          <img
+            className="img_flor_head"
+            src="/images/flores/orquideas_duo.webp"
+          />
+          <img
+            className="img_hojas_head"
+            src="/images/hojas/ramas_duo.webp"
+          />
+        </div>
+        <div data-aos="fade-down-right">
           <div className="date_hr">
             <hr
               aria-orientation="horizontal"

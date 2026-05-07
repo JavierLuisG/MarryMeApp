@@ -171,11 +171,36 @@ h3 {
 /* ============================ HEAD Section ============================ */
 /* ---------------------------------------------------------------------- */
 .container_head {
-  padding: 1em 0em 4em 0em;
+  padding: 6em 0em 4em 0em;
   position: relative;
+  width: 100%;
 }
 
-:is(.container_head) {
+.img_head_container {
+  position: absolute;
+  top: -10em;
+  width: 100%;
+  margin: auto;
+}
+
+.img_flor_head {
+  height: 7.5em;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+}
+
+.img_hojas_head {
+  height: 9em;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+  object-fit: contain;
+}
+
+:is(.container_head, .img_flor_head, .img_hojas_head) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
   width: 100%;
 }
@@ -1086,6 +1111,7 @@ h3 {
   z-index: 3;
   width: 100%;
   height: 100%;
+  padding: 3em 3em;
   background: #ffffff;
   display: flex;
   justify-content: center;
@@ -1135,7 +1161,8 @@ h3 {
 }
 
 .env-pre-names {
-  font-size: 0.8em;
+  font-weight: 600;
+  font-size: 1.1em;
   font-style: italic;
   color: var(--text-on-light-secondary);
 }
@@ -1143,10 +1170,12 @@ h3 {
 .env-names {
   line-height: 1.2;
   margin: 0.05em 0;
+  font-size: 2.5em;
 }
 
 .env-hint-line1 {
-  font-size: 0.8em;
+  font-size: 1.1em;
+  font-weight: 600;
   font-style: italic;
   color: var(--text-on-light-secondary);
 }
@@ -1170,7 +1199,7 @@ h3 {
 }
 
 .env-hint-line2 {
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: 500;
   color: var(--text-on-light);
   letter-spacing: 0.04em;
@@ -1205,7 +1234,6 @@ h3 {
 }
 
 @media (max-width: 730px) {
-
   .img_rama_hortensia_gifts {
     top: calc(5.5em + 1.4em);
 

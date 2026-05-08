@@ -5,6 +5,22 @@ const SectionDetail = () => {
   return (
     <div className="container_section_detail flex_column box">
       <h2>Detalles</h2>
+      <div className="arreglo_detail" data-aos="fade-right">
+        <div className="flor_detail">
+          <img
+            src="/images/flores/orquidea.webp"
+            loading="lazy"
+            alt=""
+          />
+        </div>
+        <div className="rama_detail">
+          <img
+            src="/images/hojas/rama_sencilla.webp"
+            loading="lazy"
+            alt=""
+          />
+        </div>
+      </div>
       <div className="flex_row">
         <div className="suit_container flex_column">
           <img className="img_suit_man" src="/img_suit_man.svg" alt="" />

@@ -101,6 +101,7 @@ h3 {
   max-width: 780px;
   margin: 0 auto;
   width: 100%;
+  overflow: hidden;
 }
 
 .container_home {
@@ -178,13 +179,13 @@ h3 {
 
 .img_head_container {
   position: absolute;
-  top: -10em;
+  top: -9em;
   width: 100%;
   margin: auto;
 }
 
 .img_flor_head {
-  height: 7.5em;
+  height: 5em;
   z-index: 1;
   position: relative;
   width: 100%;
@@ -192,7 +193,7 @@ h3 {
 }
 
 .img_hojas_head {
-  height: 9em;
+  height: 7em;
   position: absolute;
   top: 0em;
   left: 0em;
@@ -677,7 +678,35 @@ h3 {
   left: calc(50% - 1px);
 }
 
-:is(.container_section_detail) {
+.arreglo_detail {
+  position: absolute;
+  bottom: 21em;
+  left: -1em;
+}
+
+.flor_detail {
+  position: absolute;
+  top: 3em;
+  right: 2em;
+  z-index: 2;
+
+  & img {
+    width: 4em;
+  }
+}
+
+.rama_detail {
+  position: relative;
+  top: 0em;
+  z-index: 1;
+  left: 0em;
+
+  & img {
+    width: 6em;
+  }
+}
+
+:is(.container_section_detail, .arreglo_detail, .flor_detail, .rama_detail) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -810,49 +839,6 @@ h3 {
   width: 4em;
 }
 
-/* .container_flor_ramas_gifts {
-  position: absolute;
-  top: -4em;
-  left: 5em;
-  transform: rotate(45deg);
-  z-index: 1;
-} */
-
-/* .img_rama_hortensia_gifts {
-  position: absolute;
-  top: 6em;
-  z-index: 1;
-  left: -0.5em;
-  transform: rotate(-45deg);
-
-  & img {
-    width: 12em;
-  }
-} */
-
-/* .img_rama_hortensia_2_gifts {
-  position: absolute;
-  top: 1.5em;
-  z-index: 1;
-  left: -1em;
-  transform: rotate(45deg) scaleY(-1);
-
-  & img {
-    width: 12em;
-  }
-} */
-
-/* .img_hortensia_gifts {
-  position: relative;
-  top: 3.5em;
-  right: 2em;
-  z-index: 2;
-
-  & img {
-    width: 8em;
-  }
-} */
-
 :is(.container_section_gifts) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
@@ -978,20 +964,8 @@ h3 {
 .arreglo_container {
   position: relative;
   width: 100%;
-  padding: 2em 0em;
+  padding: 0em 0em;
 }
-
-/* .rama_arreglo {
-  position: absolute;
-  transform: rotate(-90deg);
-  left: -6em;
-  top: -2em;
-  z-index: 4;
-
-  & img {
-    width: 17em;
-  }
-} */
 
 .curvas_doble_derecha_arreglo {
   width: 100%;

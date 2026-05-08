@@ -923,7 +923,7 @@ h3 {
 }
 
 :is(.container_footer) {
-  font-size: clamp(0.75rem, 0.75vw + 0.75rem, 6rem);
+  font-size: clamp(0.9rem, 0.9vw + 0.9rem, 6rem);
 }
 
 /* ---------------------------------------------------------------------- */

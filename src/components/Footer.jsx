@@ -8,7 +8,7 @@ const Footer = () => {
           Desarrollado por <strong>Javier Luis</strong>
         </span>
       </div>
-      <span className="footer_copy">© 2026 · Todos los derechos reservados</span>
+      <span className="footer_copy">© 2026 · Derechos reservados</span>
     </footer>
   );
 };

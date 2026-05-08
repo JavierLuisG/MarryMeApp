@@ -62,3 +62,5 @@ Teo -> https://nuestra-boda-pi.vercel.app/Teo
 Camilo Beltran & Esposa -> https://nuestra-boda-pi.vercel.app/Camilo%20Beltran%20&%20Esposa
 Virginia Caro Vargas -> https://nuestra-boda-pi.vercel.app/Virginia%20Caro%20Vargas
 Carlos & Esposa -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Esposa
+Carlos & Milena -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Milena
+Carlos & Silvia -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Silvia

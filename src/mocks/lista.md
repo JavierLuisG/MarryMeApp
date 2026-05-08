@@ -60,3 +60,4 @@ Laura Ruge -> https://nuestra-boda-pi.vercel.app/Laura%20Ruge
 Nicole Fonseca -> https://nuestra-boda-pi.vercel.app/Nicole%20Fonseca
 Teo -> https://nuestra-boda-pi.vercel.app/Teo
 Camilo Beltran & Esposa -> https://nuestra-boda-pi.vercel.app/Camilo%20Beltran%20&%20Esposa
+Virginia Caro Vargas -> https://nuestra-boda-pi.vercel.app/Virginia%20Caro%20Vargas

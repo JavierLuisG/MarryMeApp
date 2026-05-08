@@ -64,3 +64,4 @@ Virginia Caro Vargas -> https://nuestra-boda-pi.vercel.app/Virginia%20Caro%20Var
 Carlos & Esposa -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Esposa
 Carlos & Milena -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Milena
 Carlos & Silvia -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Silvia
+Yeison Quiñones -> https://nuestra-boda-pi.vercel.app/Yeison%20Quiñones

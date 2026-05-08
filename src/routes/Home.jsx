@@ -10,6 +10,7 @@ import ConfirmAttendance from "../components/ConfirmAttendance";
 import BgMusic from "../components/BgMusic";
 import Footer from "../components/Footer";
 import Arreglo from "../components/Arreglo";
+import ArregloLinea from "../components/ArregloLinea";
 import EnvelopeIntro from "../components/EnvelopeIntro";
 
 export const Home = () => {
@@ -32,7 +33,7 @@ export const Home = () => {
         <Places />
         <Arreglo />
         <ConfirmAttendance />
-        <img src="/img_linea.svg" alt="" />
+        <ArregloLinea />
         <SectionDetail />
         <Gifts />
         <Footer />

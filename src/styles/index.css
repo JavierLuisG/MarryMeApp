@@ -678,38 +678,6 @@ h3 {
   left: calc(50% - 1px);
 }
 
-.arreglo_detail {
-  position: absolute;
-  bottom: 21em;
-  left: -1em;
-}
-
-.flor_detail {
-  position: absolute;
-  top: 3em;
-  right: 2em;
-  z-index: 2;
-
-  & img {
-    width: 4em;
-  }
-}
-
-.rama_detail {
-  position: relative;
-  top: 0em;
-  z-index: 1;
-  left: 0em;
-
-  & img {
-    width: 6em;
-  }
-}
-
-:is(.container_section_detail, .arreglo_detail, .flor_detail, .rama_detail) {
-  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
-}
-
 /* ---------------------------------------------------------------------- */
 /* =========================== OURLOVE Section ========================== */
 /* ---------------------------------------------------------------------- */
@@ -991,6 +959,49 @@ h3 {
 }
 
 :is(.arreglo_container) {
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ============================ ARREGLO_LINEA =========================== */
+/* ---------------------------------------------------------------------- */
+.arreglo_linea_container {
+  position: relative;
+  width: 100%;
+  padding: 0em 0em;
+  z-index: 1;
+}
+
+.arreglo_detail {
+  position: absolute;
+  bottom: -2em;
+  left: -1em;
+}
+
+.flor_detail {
+  position: absolute;
+  top: 3em;
+  right: 2em;
+  z-index: 20;
+
+  & img {
+    width: 4em;
+  }
+}
+
+.rama_detail {
+  position: relative;
+  top: 0em;
+  z-index: 10;
+  left: 0em;
+
+  & img {
+    width: 6em;
+  }
+}
+
+:is(.arreglo_linea_container, .container_section_detail, .arreglo_detail, .flor_detail, .rama_detail) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 

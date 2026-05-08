@@ -18,7 +18,7 @@ const Footer = () => {
           title="¿Quieres una invitación como esta?"
         >
           <img src="/whatsapp.svg" alt="WhatsApp" width="16" height="16" />
-          <span className="footer_wa_text">Solicitar información</span>
+          <span className="footer_wa_text">Solicita información</span>
         </a>
       </div>
       <span className="footer_copy">© 2026 · Derechos reservados</span>

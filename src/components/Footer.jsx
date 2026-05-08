@@ -1,7 +1,7 @@
 import React from "react";
 
 const WA_NUMBER = "573209455269";
-const WA_MESSAGE = encodeURIComponent("Hola, vi tu invitación de matrimonio y me gustaría una similar 😊");
+const WA_MESSAGE = encodeURIComponent("Hola, vi la invitación de matrimonio que diseñaste y me gustaría una similar 😊");
 
 const Footer = () => {
   return (

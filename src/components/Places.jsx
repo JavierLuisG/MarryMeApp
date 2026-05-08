@@ -1,17 +1,23 @@
 import CardPlaces from "./CardPlaces";
 import config from "../mocks/config.json";
 
-const Places = () => {
+const Places = ({ showReception = false }) => {
+  const places = showReception
+    ? config.places
+    : config.places.filter((p) => p.title === "Ceremonia");
+
   return (
     <div className="container_places flex_row box">
-      <div className="container_flor_ramas_places">
-        <div data-aos="fade-right">
-          <div className="img_ondas_delgadas">
-            <img src="/img_lineas_tres.svg" loading="lazy" alt="" />
+      {showReception && (
+        <div className="container_flor_ramas_places">
+          <div data-aos="fade-right">
+            <div className="img_ondas_delgadas">
+              <img src="/img_lineas_tres.svg" loading="lazy" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-      {config.places.map((info, index) => (
+      )}
+      {places.map((info, index) => (
         <CardPlaces key={index} info={info} />
       ))}
     </div>

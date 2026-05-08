@@ -16,11 +16,11 @@ Luzma -> https://nuestra-boda-pi.vercel.app/Luzma
 Judhid -> https://nuestra-boda-pi.vercel.app/Judhid
 Luzmarina -> https://nuestra-boda-pi.vercel.app/Luzmarina
 Gloria -> https://nuestra-boda-pi.vercel.app/Gloria
-Fredy -> https://nuestra-boda-pi.vercel.app/Fredy
+Freddy -> https://nuestra-boda-pi.vercel.app/Freddy
 Sandra -> https://nuestra-boda-pi.vercel.app/Sandra
 Juliána -> https://nuestra-boda-pi.vercel.app/Juliána
 Ricardo -> https://nuestra-boda-pi.vercel.app/Ricardo
-Elisabed -> https://nuestra-boda-pi.vercel.app/Elisabed
+Elizabeth -> https://nuestra-boda-pi.vercel.app/Elizabeth
 Eduardo & Olga -> https://nuestra-boda-pi.vercel.app/Eduardo%20&%20Olga
 Jhonatan & Edna -> https://nuestra-boda-pi.vercel.app/Jhonatan%20&%20Edna
 Rocita -> https://nuestra-boda-pi.vercel.app/Rocita
@@ -33,7 +33,7 @@ Esneider & Fernanda -> https://nuestra-boda-pi.vercel.app/Esneider%20&%20Fernand
 María Fernanda Vega -> https://nuestra-boda-pi.vercel.app/María%20Fernanda%20Vega
 Edilberto & Rosa -> https://nuestra-boda-pi.vercel.app/Edilberto%20&%20Rosa
 Carlos Hermano -> https://nuestra-boda-pi.vercel.app/Carlos%20Hermano
-Alex & Caterin -> https://nuestra-boda-pi.vercel.app/Alex%20&%20Caterin
+Alex & Esposa -> https://nuestra-boda-pi.vercel.app/Alex%20&%20Esposa
 Juan David & Esposa -> https://nuestra-boda-pi.vercel.app/Juan%20David%20&%20Esposa
 Abuelita Rosa -> https://nuestra-boda-pi.vercel.app/Abuelita%20Rosa
 Elena Estepa -> https://nuestra-boda-pi.vercel.app/Elena%20Estepa
@@ -61,3 +61,4 @@ Nicole Fonseca -> https://nuestra-boda-pi.vercel.app/Nicole%20Fonseca
 Teo -> https://nuestra-boda-pi.vercel.app/Teo
 Camilo Beltran & Esposa -> https://nuestra-boda-pi.vercel.app/Camilo%20Beltran%20&%20Esposa
 Virginia Caro Vargas -> https://nuestra-boda-pi.vercel.app/Virginia%20Caro%20Vargas
+Carlos & Esposa -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Esposa

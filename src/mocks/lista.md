@@ -65,3 +65,9 @@ Carlos & Esposa -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Esposa
 Carlos & Milena -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Milena
 Carlos & Silvia -> https://nuestra-boda-pi.vercel.app/Carlos%20&%20Silvia
 Yeison Quiñones -> https://nuestra-boda-pi.vercel.app/Yeison%20Quiñones
+Leonardo & Esposa -> https://nuestra-boda-pi.vercel.app/Leonardo%20&%20Esposa
+Juan Sánchez & hijos -> https://nuestra-boda-pi.vercel.app/Juan%20Sánchez%20&%20hijos
+Jesus Espejo & Esposa -> https://nuestra-boda-pi.vercel.app/Jesus%20Espejo%20&%20Esposa
+Lionor Muñoz -> https://nuestra-boda-pi.vercel.app/Lionor%20Muñoz
+Felipe Huertas -> https://nuestra-boda-pi.vercel.app/Felipe%20Huertas
+Jairo & Esposa -> https://nuestra-boda-pi.vercel.app/Jairo%20&%20Esposa

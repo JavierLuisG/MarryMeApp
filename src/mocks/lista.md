@@ -71,3 +71,5 @@ Jesus Espejo & Esposa -> https://nuestra-boda-pi.vercel.app/Jesus%20Espejo%20&%2
 Lionor Muñoz -> https://nuestra-boda-pi.vercel.app/Lionor%20Muñoz
 Felipe Huertas -> https://nuestra-boda-pi.vercel.app/Felipe%20Huertas
 Jairo & Esposa -> https://nuestra-boda-pi.vercel.app/Jairo%20&%20Esposa
+Mariluz -> https://nuestra-boda-pi.vercel.app/Mariluz
+Esperanza -> https://nuestra-boda-pi.vercel.app/Esperanza
